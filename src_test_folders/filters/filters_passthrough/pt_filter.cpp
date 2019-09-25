@@ -4,6 +4,7 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include <pcl/filters/crop_box.h>
 
+
 // Define min and max for X, Y and Z
 float minX = -0.2, minY = -0.2, minZ = -2.5;
 float maxX = +0.2, maxY = +0.2, maxZ = +2.5;
@@ -22,6 +23,13 @@ int main (int argc, char** argv)
     boxFilter.setMax(Eigen::Vector4f(maxX, maxY, maxZ, 1.0));
     boxFilter.setInputCloud(body);
     boxFilter.filter(*bodyFiltered);
+
+    //add dsampled_ to filename that gets saved
+    std::string s;
+    s.append("pt_filtered_");
+    s.append(argv[1]);
+
+    pcl::io::savePCDFile(s, *bodyFiltered);
 
     viewer.addPointCloud (bodyFiltered,"bodyfiltered");
     viewer.spin();

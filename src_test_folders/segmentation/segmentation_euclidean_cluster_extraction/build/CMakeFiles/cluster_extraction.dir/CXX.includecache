@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jeroen/workspaces/Euclidean_cluster_extraction/cluster_extraction_v3.cpp
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction_v3.cpp
 thread
 -
 pcl/ModelCoefficients.h
@@ -33,7 +33,7 @@ pcl/segmentation/extract_clusters.h
 -
 pcl/console/parse.h
 -
-pcl/visualization/cloud_viewer.h
+pcl/visualization/pcl_visualizer.h
 -
 
 /usr/include/eigen3/Eigen/Cholesky
@@ -2600,12 +2600,6 @@ boost/foreach.hpp
 boost/date_time/posix_time/posix_time.hpp
 -
 boost/filesystem.hpp
--
-
-/usr/include/pcl-1.8/pcl/visualization/cloud_viewer.h
-pcl/visualization/pcl_visualizer.h
--
-string
 -
 
 /usr/include/pcl-1.8/pcl/visualization/common/actor_map.h

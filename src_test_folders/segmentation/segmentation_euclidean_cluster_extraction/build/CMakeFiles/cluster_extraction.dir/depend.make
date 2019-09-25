@@ -374,7 +374,6 @@ CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-
 CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/segmentation/sac_segmentation.h
 CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/visualization/area_picking_event.h
 CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/visualization/boost.h
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/visualization/cloud_viewer.h
 CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/visualization/common/actor_map.h
 CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/visualization/common/common.h
 CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o: /usr/include/pcl-1.8/pcl/visualization/common/impl/common.hpp

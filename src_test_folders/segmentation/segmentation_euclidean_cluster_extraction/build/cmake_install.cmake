@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeroen/workspaces/Euclidean_cluster_extraction
+# Install script for directory: /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jeroen/workspaces/Euclidean_cluster_extraction/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

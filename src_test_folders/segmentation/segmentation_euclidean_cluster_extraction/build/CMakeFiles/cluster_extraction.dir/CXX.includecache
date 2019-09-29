@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction_v3.cpp
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction_v4.cpp
 thread
 -
 pcl/ModelCoefficients.h

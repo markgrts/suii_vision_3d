@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cluster_extraction.dir/cluster_extraction_v3.cpp.o"
+  "CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o"
   "cluster_extraction.pdb"
   "cluster_extraction"
 )

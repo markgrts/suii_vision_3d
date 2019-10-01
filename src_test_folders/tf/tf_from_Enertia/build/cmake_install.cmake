@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeroen/workspaces/pcl_v1.1_TF_Enertia
+# Install script for directory: /home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

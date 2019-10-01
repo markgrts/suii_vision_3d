@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_30a52/fast"
-/usr/bin/make -f CMakeFiles/cmTC_30a52.dir/build.make CMakeFiles/cmTC_30a52.dir/build
-make[1]: Entering directory '/home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_30a52.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_30a52.dir/CheckSymbolExists.c.o   -c /home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_30a52
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30a52.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_30a52.dir/CheckSymbolExists.c.o  -o cmTC_30a52 
-CMakeFiles/cmTC_30a52.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_48cfa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_48cfa.dir/build.make CMakeFiles/cmTC_48cfa.dir/build
+make[1]: Entering directory '/home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48cfa.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_48cfa.dir/CheckSymbolExists.c.o   -c /home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_48cfa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48cfa.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_48cfa.dir/CheckSymbolExists.c.o  -o cmTC_48cfa 
+CMakeFiles/cmTC_48cfa.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_30a52.dir/build.make:97: recipe for target 'cmTC_30a52' failed
-make[1]: *** [cmTC_30a52] Error 1
-make[1]: Leaving directory '/home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_30a52/fast' failed
-make: *** [cmTC_30a52/fast] Error 2
+CMakeFiles/cmTC_48cfa.dir/build.make:97: recipe for target 'cmTC_48cfa' failed
+make[1]: *** [cmTC_48cfa] Error 1
+make[1]: Leaving directory '/home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_48cfa/fast' failed
+make: *** [cmTC_48cfa/fast] Error 2
 
-File /home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ca79/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8ca79.dir/build.make CMakeFiles/cmTC_8ca79.dir/build
-make[1]: Entering directory '/home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8ca79.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8ca79.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8ca79
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca79.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8ca79.dir/CheckFunctionExists.c.o  -o cmTC_8ca79 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_cd322/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd322.dir/build.make CMakeFiles/cmTC_cd322.dir/build
+make[1]: Entering directory '/home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd322.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cd322.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cd322
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd322.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_cd322.dir/CheckFunctionExists.c.o  -o cmTC_cd322 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8ca79.dir/build.make:97: recipe for target 'cmTC_8ca79' failed
-make[1]: *** [cmTC_8ca79] Error 1
-make[1]: Leaving directory '/home/jeroen/workspaces/pcl_v1.1_TF_Enertia/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8ca79/fast' failed
-make: *** [cmTC_8ca79/fast] Error 2
+CMakeFiles/cmTC_cd322.dir/build.make:97: recipe for target 'cmTC_cd322' failed
+make[1]: *** [cmTC_cd322] Error 1
+make[1]: Leaving directory '/home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cd322/fast' failed
+make: *** [cmTC_cd322/fast] Error 2
 
 

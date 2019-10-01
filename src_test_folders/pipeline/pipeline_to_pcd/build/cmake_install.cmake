@@ -1,4 +1,4 @@
-# Install script for directory: /home/mark/workspaces/ply_to_pcd
+# Install script for directory: /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mark/workspaces/ply_to_pcd/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

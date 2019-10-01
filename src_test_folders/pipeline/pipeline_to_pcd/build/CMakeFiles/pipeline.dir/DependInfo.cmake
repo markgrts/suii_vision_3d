@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mark/workspaces/ply_to_pcd/ply_to_pcd.cpp" "/home/mark/workspaces/ply_to_pcd/build/CMakeFiles/ply_to_pcd.dir/ply_to_pcd.cpp.o"
+  "/home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/pipeline.cpp" "/home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/build/CMakeFiles/pipeline.dir/pipeline.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -50,10 +50,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/libxml2"
   "/usr/include/jsoncpp"
   "/usr/include/tcl"
+  "/usr/include/opencv"
   "/usr/include/pcl-1.8"
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"
+  "/usr/local/include"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"

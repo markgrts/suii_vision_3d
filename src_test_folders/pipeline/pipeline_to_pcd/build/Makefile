@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mark/workspaces/ply_to_pcd
+CMAKE_SOURCE_DIR = /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mark/workspaces/ply_to_pcd/build
+CMAKE_BINARY_DIR = /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/workspaces/ply_to_pcd/build/CMakeFiles /home/mark/workspaces/ply_to_pcd/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/build/CMakeFiles /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/workspaces/ply_to_pcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ply_to_pcd
+# Target rules for targets named pipeline
 
 # Build rule for target.
-ply_to_pcd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ply_to_pcd
-.PHONY : ply_to_pcd
+pipeline: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pipeline
+.PHONY : pipeline
 
 # fast build rule for target.
-ply_to_pcd/fast:
-	$(MAKE) -f CMakeFiles/ply_to_pcd.dir/build.make CMakeFiles/ply_to_pcd.dir/build
-.PHONY : ply_to_pcd/fast
+pipeline/fast:
+	$(MAKE) -f CMakeFiles/pipeline.dir/build.make CMakeFiles/pipeline.dir/build
+.PHONY : pipeline/fast
 
-ply_to_pcd.o: ply_to_pcd.cpp.o
+pipeline.o: pipeline.cpp.o
 
-.PHONY : ply_to_pcd.o
+.PHONY : pipeline.o
 
 # target to build an object file
-ply_to_pcd.cpp.o:
-	$(MAKE) -f CMakeFiles/ply_to_pcd.dir/build.make CMakeFiles/ply_to_pcd.dir/ply_to_pcd.cpp.o
-.PHONY : ply_to_pcd.cpp.o
+pipeline.cpp.o:
+	$(MAKE) -f CMakeFiles/pipeline.dir/build.make CMakeFiles/pipeline.dir/pipeline.cpp.o
+.PHONY : pipeline.cpp.o
 
-ply_to_pcd.i: ply_to_pcd.cpp.i
+pipeline.i: pipeline.cpp.i
 
-.PHONY : ply_to_pcd.i
+.PHONY : pipeline.i
 
 # target to preprocess a source file
-ply_to_pcd.cpp.i:
-	$(MAKE) -f CMakeFiles/ply_to_pcd.dir/build.make CMakeFiles/ply_to_pcd.dir/ply_to_pcd.cpp.i
-.PHONY : ply_to_pcd.cpp.i
+pipeline.cpp.i:
+	$(MAKE) -f CMakeFiles/pipeline.dir/build.make CMakeFiles/pipeline.dir/pipeline.cpp.i
+.PHONY : pipeline.cpp.i
 
-ply_to_pcd.s: ply_to_pcd.cpp.s
+pipeline.s: pipeline.cpp.s
 
-.PHONY : ply_to_pcd.s
+.PHONY : pipeline.s
 
 # target to generate assembly for a file
-ply_to_pcd.cpp.s:
-	$(MAKE) -f CMakeFiles/ply_to_pcd.dir/build.make CMakeFiles/ply_to_pcd.dir/ply_to_pcd.cpp.s
-.PHONY : ply_to_pcd.cpp.s
+pipeline.cpp.s:
+	$(MAKE) -f CMakeFiles/pipeline.dir/build.make CMakeFiles/pipeline.dir/pipeline.cpp.s
+.PHONY : pipeline.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ply_to_pcd"
+	@echo "... pipeline"
 	@echo "... edit_cache"
-	@echo "... ply_to_pcd.o"
-	@echo "... ply_to_pcd.i"
-	@echo "... ply_to_pcd.s"
+	@echo "... pipeline.o"
+	@echo "... pipeline.i"
+	@echo "... pipeline.s"
 .PHONY : help
 
 

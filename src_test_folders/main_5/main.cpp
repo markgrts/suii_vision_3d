@@ -1,12 +1,8 @@
 #include <iostream>
-#include "main.h"
-
+#include "pipeline.h"
+#include "vis.h"
 
 using namespace std;
-
-pcl::PointCloud<pcl::PointXYZ>::Ptr pipeline(string);
-void viz(pcl::PointCloud<pcl::PointXYZ>);
-
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
 
 int main(int argc, char** argv){
@@ -21,10 +17,15 @@ int main(int argc, char** argv){
     if (argc != 2){
         cout << "Add input_file.pcd" << endl;
         return (0);
-    }    
-    
-    cloud = pipeline(file_name);
-    viz(cloud);
+    }        
+
+    //Get PCD from Pipeline.cpp
+    Pipeline pipe;
+    cloud = pipe.getCloud(file_name);
+ 
+    //visualize PCD
+    Vis vis;
+    vis.getVis(cloud);
 
     return(0);
 }

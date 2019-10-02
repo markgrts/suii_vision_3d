@@ -5,10 +5,7 @@
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
 
-//class get object tf
-
-//class get table distance
-
+//class get tf
 
 int main(int argc, char** argv){
 
@@ -27,10 +24,14 @@ int main(int argc, char** argv){
     //Get PCD from Pipeline.cpp
     Pipeline pipe;
     cloud = pipe.getCloud(file_name);
+
+
  
     //visualize PCD
     Vis vis;
-    vis.getVis(cloud);
-
+    //vis.createViewer();
+    vis.addCloud(cloud);
+    vis.showViewer();
+    
     return(0);
 }

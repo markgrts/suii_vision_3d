@@ -2,7 +2,6 @@
 
 #include <vector>
 #include <thread>
-
 #include <pcl/features/moment_of_inertia_estimation.h>
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
@@ -56,7 +55,6 @@ int main (int argc, char** argv)
   viewer->initCameraParameters ();
   //adds pc and changes color
   viewer->addPointCloud<pcl::PointXYZ> (cloud, single_color, "sample cloud");
-  
   viewer->addCube (min_point_AABB.x, max_point_AABB.x, min_point_AABB.y, max_point_AABB.y, min_point_AABB.z, max_point_AABB.z, 1.0, 1.0, 0.0, "AABB");
   viewer->setShapeRenderingProperties(pcl::visualization::PCL_VISUALIZER_REPRESENTATION, pcl::visualization::PCL_VISUALIZER_REPRESENTATION_WIREFRAME, "AABB");
 

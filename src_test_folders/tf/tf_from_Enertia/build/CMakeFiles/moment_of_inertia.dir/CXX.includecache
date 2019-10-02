@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jeroen/workspaces/pcl_v1.1_TF_Enertia/moment_of_inertia.cpp
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/tf/tf_from_Enertia/moment_of_inertia.cpp
 vector
 -
 thread

@@ -18,7 +18,10 @@ std::tuple<uint8_t, uint8_t, uint8_t> get_texcolor(rs2::video_frame texture, rs2
 }
 
 int i = 0;
-int j = 500;
+int xmin = 0;
+int xmax = 0;
+int ymin = 0;
+int ymax = 0;
 
 pcl::PointCloud<pcl::PointXYZ>::Ptr points_to_pcl(const rs2::points& points, const rs2::video_frame& color)
 {
@@ -38,20 +41,14 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr points_to_pcl(const rs2::points& points, con
     {
         for(int x = 0; x < 640; ++x)
         {
-            cloud->points[i].x = vertices[j].x;
-            cloud->points[i].y = vertices[j].y;
-            cloud->points[i].z = vertices[j].z;
-
-            /*std::tuple<uint8_t, uint8_t, uint8_t> current_color;
-            current_color = get_texcolor(color, tex_coords[i]);
-
-            cloud->points[x].r = std::get<0>(current_color);
-            cloud->points[x].g = std::get<1>(current_color);
-            cloud->points[x].b = std::get<2>(current_color);
-            */
+            if(x >= xmin && x <= xmax && y >= ymin && y <= ymax)
+            {
+                cloud->points[i].x = vertices[i].x;
+                cloud->points[i].y = vertices[i].y;
+                cloud->points[i].z = vertices[i].z;
+            }
 
             ++i;
-            ++j;
         }
     }
 

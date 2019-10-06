@@ -6,6 +6,7 @@
 #include <pcl/common/transforms.h>
 #include <pcl/visualization/pcl_visualizer.h>
 
+
 std::tuple<uint8_t, uint8_t, uint8_t> get_texcolor(rs2::video_frame texture, rs2::texture_coordinate texcoords)
 {
 	const int w = texture.get_width(), h = texture.get_height();
@@ -18,10 +19,10 @@ std::tuple<uint8_t, uint8_t, uint8_t> get_texcolor(rs2::video_frame texture, rs2
 }
 
 int i = 0;
-int xmin = 0;
-int xmax = 0;
-int ymin = 0;
-int ymax = 0;
+int xmin = 250;
+int xmax = 400;
+int ymin = 100;
+int ymax = 300;
 
 pcl::PointCloud<pcl::PointXYZ>::Ptr points_to_pcl(const rs2::points& points, const rs2::video_frame& color)
 {

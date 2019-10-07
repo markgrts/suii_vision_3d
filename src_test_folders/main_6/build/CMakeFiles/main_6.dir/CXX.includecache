@@ -13,6 +13,8 @@ pipeline.h
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/pipeline.h
 vis.h
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/vis.h
+tf.h
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/tf.h
 
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/pipeline.cpp
 pipeline.h
@@ -28,6 +30,20 @@ pcl/io/pcd_io.h
 pcl/point_types.h
 -
 pcl/visualization/cloud_viewer.h
+-
+
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/tf.h
+iostream
+-
+vector
+-
+thread
+-
+pcl/features/moment_of_inertia_estimation.h
+-
+pcl/io/pcd_io.h
+-
+pcl/point_types.h
 -
 
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/vis.cpp

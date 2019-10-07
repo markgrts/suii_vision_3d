@@ -37,24 +37,29 @@ void Vis::showViewer(pcl::visualization::PCLVisualizer::Ptr viewer)
     viewer->addCoordinateSystem (0.1);
     viewer->initCameraParameters ();
     cout << "show viewer" << endl;
-    while (!viewer->wasStopped ())
+    for(int i = 0; i <= 150; i++)
     {
         viewer->spinOnce (100); 	
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
+    /*while (!viewer->wasStopped ())
+    {
+        viewer->spinOnce (100); 	
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }*/
 }
 
 void Vis::nameCounter(int number)
 {
     cloud_name = cloud_name + std::to_string(number);
     if(number == 0){
-        cloud_color.col1 = 255;
-        cloud_color.col2 = 0;
+        cloud_color.col1 = 0;
+        cloud_color.col2 = 200;
         cloud_color.col3 = 0;
     }
     else if(number == 1){
-        cloud_color.col1 = 0;
-        cloud_color.col2 = 255;
+        cloud_color.col1 = 255;
+        cloud_color.col2 = 0;
         cloud_color.col3 = 0;
     }
     else if(number == 2){

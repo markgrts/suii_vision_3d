@@ -21,12 +21,15 @@ class Vis
         int cloud_count;
         color cloud_color;        
         std::string cloud_name;
+        pcl::visualization::PCLVisualizer::Ptr viewer;
         
     public:
-        pcl::visualization::PCLVisualizer::Ptr viewer;
+        
         Vis();
-        void addCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
-        void showViewer(void);
+        pcl::visualization::PCLVisualizer::Ptr createViewer (void);
+        pcl::visualization::PCLVisualizer::Ptr addCloud(pcl::visualization::PCLVisualizer::Ptr viewer,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
+        void showViewer(pcl::visualization::PCLVisualizer::Ptr viewer);
+        void nameCounter(int number);
 };
 
 #endif

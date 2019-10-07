@@ -4,7 +4,7 @@
 
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
-
+pcl::visualization::PCLVisualizer::Ptr viewer;
 //class get tf
 
 int main(int argc, char** argv){
@@ -25,13 +25,11 @@ int main(int argc, char** argv){
     Pipeline pipe;
     cloud = pipe.getCloud(file_name);
 
-
- 
     //visualize PCD
     Vis vis;
-    //vis.createViewer();
-    vis.addCloud(cloud);
-    vis.showViewer();
+    viewer = vis.createViewer();
+    viewer = vis.addCloud(viewer, cloud);
+    vis.showViewer(viewer);
     
     return(0);
 }

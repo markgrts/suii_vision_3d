@@ -18,12 +18,12 @@ struct color{
 class Vis
 {
     private:
-        pcl::visualization::PCLVisualizer::Ptr viewer;
         int cloud_count;
         color cloud_color;        
         std::string cloud_name;
         
     public:
+        pcl::visualization::PCLVisualizer::Ptr viewer;
         Vis();
         void addCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
         void showViewer(void);

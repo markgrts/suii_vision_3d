@@ -7,9 +7,7 @@ Vis::Vis(void){
     cout << "VIEWER CREATED" << endl;
     cout << "##############################" << endl;
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
-    viewer->setBackgroundColor (0, 0, 0);
-    viewer->addCoordinateSystem (0.1);
-    viewer->initCameraParameters ();
+    viewer->setBackgroundColor (0, 0, 0);    
     cloud_color.col1 = 0;
     cloud_color.col2 = 255;
     cloud_color.col3 = 0;
@@ -22,11 +20,14 @@ void Vis::addCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
     cout << "add cloud" << endl;
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(cloud, cloud_color.col1, cloud_color.col2, cloud_color.col3);
     viewer->addPointCloud<pcl::PointXYZ> (cloud, single_color, cloud_name);
+    //viewer->addPointCloud<pcl::PointXYZ> (cloud, "sample cloud");
 }
 
 // Vis member function
 void Vis::showViewer(void)
 {
+    viewer->addCoordinateSystem (0.1);
+    viewer->initCameraParameters ();
     cout << "show viewer" << endl;
     while (!viewer->wasStopped ())
     {

@@ -12,7 +12,7 @@ Vis::Vis()
 void Vis::getVis(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
 {
     ;
-    
+
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
     viewer->setBackgroundColor (0, 0, 0);
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(cloud, 0, 255, 0);

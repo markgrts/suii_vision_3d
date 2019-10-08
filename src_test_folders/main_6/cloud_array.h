@@ -21,7 +21,7 @@ class CloudArray
         void printVector();
         std::vector<int> giveVector();
         //void CloudArray:setCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
-        //std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> CloudArray:getCloud(std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> cloud);
+        std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> CloudArray:getCloud(std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> cloud);
 };
 
 #endif

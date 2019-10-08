@@ -32,7 +32,6 @@ int main(int argc, char** argv){
     //Get PCD from Pipeline.cpp
     Pipeline pipe;
     cloud = pipe.getCloud(file_name);
-
     //Create cloud array
     CloudArray array_test;
     //array_test.printVector();

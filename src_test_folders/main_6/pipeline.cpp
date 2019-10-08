@@ -15,5 +15,6 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr Pipeline::getCloud(std::string file_name)
     pcl::io::loadPCDFile<pcl::PointXYZ> (file_name, *cloud);
     cout << "CLOUD LOADED" << endl;
     cout << "##############################" << endl;
+    //return pointer to cloud instead of the cloud
     return(cloud);
 }

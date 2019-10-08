@@ -123,6 +123,33 @@ main_6/fast:
 	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/build
 .PHONY : main_6/fast
 
+cloud_array.o: cloud_array.cpp.o
+
+.PHONY : cloud_array.o
+
+# target to build an object file
+cloud_array.cpp.o:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/cloud_array.cpp.o
+.PHONY : cloud_array.cpp.o
+
+cloud_array.i: cloud_array.cpp.i
+
+.PHONY : cloud_array.i
+
+# target to preprocess a source file
+cloud_array.cpp.i:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/cloud_array.cpp.i
+.PHONY : cloud_array.cpp.i
+
+cloud_array.s: cloud_array.cpp.s
+
+.PHONY : cloud_array.s
+
+# target to generate assembly for a file
+cloud_array.cpp.s:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/cloud_array.cpp.s
+.PHONY : cloud_array.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -176,6 +203,33 @@ pipeline.s: pipeline.cpp.s
 pipeline.cpp.s:
 	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/pipeline.cpp.s
 .PHONY : pipeline.cpp.s
+
+segmentation.o: segmentation.cpp.o
+
+.PHONY : segmentation.o
+
+# target to build an object file
+segmentation.cpp.o:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/segmentation.cpp.o
+.PHONY : segmentation.cpp.o
+
+segmentation.i: segmentation.cpp.i
+
+.PHONY : segmentation.i
+
+# target to preprocess a source file
+segmentation.cpp.i:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/segmentation.cpp.i
+.PHONY : segmentation.cpp.i
+
+segmentation.s: segmentation.cpp.s
+
+.PHONY : segmentation.s
+
+# target to generate assembly for a file
+segmentation.cpp.s:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/segmentation.cpp.s
+.PHONY : segmentation.cpp.s
 
 tf.o: tf.cpp.o
 
@@ -240,12 +294,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main_6"
 	@echo "... edit_cache"
+	@echo "... cloud_array.o"
+	@echo "... cloud_array.i"
+	@echo "... cloud_array.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... pipeline.o"
 	@echo "... pipeline.i"
 	@echo "... pipeline.s"
+	@echo "... segmentation.o"
+	@echo "... segmentation.i"
+	@echo "... segmentation.s"
 	@echo "... tf.o"
 	@echo "... tf.i"
 	@echo "... tf.s"

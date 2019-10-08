@@ -153,12 +153,62 @@ CMakeFiles/main_6.dir/tf.cpp.o.provides: CMakeFiles/main_6.dir/tf.cpp.o.requires
 CMakeFiles/main_6.dir/tf.cpp.o.provides.build: CMakeFiles/main_6.dir/tf.cpp.o
 
 
+CMakeFiles/main_6.dir/segmentation.cpp.o: CMakeFiles/main_6.dir/flags.make
+CMakeFiles/main_6.dir/segmentation.cpp.o: ../segmentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main_6.dir/segmentation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main_6.dir/segmentation.cpp.o -c /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.cpp
+
+CMakeFiles/main_6.dir/segmentation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_6.dir/segmentation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.cpp > CMakeFiles/main_6.dir/segmentation.cpp.i
+
+CMakeFiles/main_6.dir/segmentation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_6.dir/segmentation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.cpp -o CMakeFiles/main_6.dir/segmentation.cpp.s
+
+CMakeFiles/main_6.dir/segmentation.cpp.o.requires:
+
+.PHONY : CMakeFiles/main_6.dir/segmentation.cpp.o.requires
+
+CMakeFiles/main_6.dir/segmentation.cpp.o.provides: CMakeFiles/main_6.dir/segmentation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/segmentation.cpp.o.provides.build
+.PHONY : CMakeFiles/main_6.dir/segmentation.cpp.o.provides
+
+CMakeFiles/main_6.dir/segmentation.cpp.o.provides.build: CMakeFiles/main_6.dir/segmentation.cpp.o
+
+
+CMakeFiles/main_6.dir/cloud_array.cpp.o: CMakeFiles/main_6.dir/flags.make
+CMakeFiles/main_6.dir/cloud_array.cpp.o: ../cloud_array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main_6.dir/cloud_array.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main_6.dir/cloud_array.cpp.o -c /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.cpp
+
+CMakeFiles/main_6.dir/cloud_array.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_6.dir/cloud_array.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.cpp > CMakeFiles/main_6.dir/cloud_array.cpp.i
+
+CMakeFiles/main_6.dir/cloud_array.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_6.dir/cloud_array.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.cpp -o CMakeFiles/main_6.dir/cloud_array.cpp.s
+
+CMakeFiles/main_6.dir/cloud_array.cpp.o.requires:
+
+.PHONY : CMakeFiles/main_6.dir/cloud_array.cpp.o.requires
+
+CMakeFiles/main_6.dir/cloud_array.cpp.o.provides: CMakeFiles/main_6.dir/cloud_array.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/cloud_array.cpp.o.provides.build
+.PHONY : CMakeFiles/main_6.dir/cloud_array.cpp.o.provides
+
+CMakeFiles/main_6.dir/cloud_array.cpp.o.provides.build: CMakeFiles/main_6.dir/cloud_array.cpp.o
+
+
 # Object files for target main_6
 main_6_OBJECTS = \
 "CMakeFiles/main_6.dir/main.cpp.o" \
 "CMakeFiles/main_6.dir/pipeline.cpp.o" \
 "CMakeFiles/main_6.dir/vis.cpp.o" \
-"CMakeFiles/main_6.dir/tf.cpp.o"
+"CMakeFiles/main_6.dir/tf.cpp.o" \
+"CMakeFiles/main_6.dir/segmentation.cpp.o" \
+"CMakeFiles/main_6.dir/cloud_array.cpp.o"
 
 # External object files for target main_6
 main_6_EXTERNAL_OBJECTS =
@@ -167,6 +217,8 @@ main_6: CMakeFiles/main_6.dir/main.cpp.o
 main_6: CMakeFiles/main_6.dir/pipeline.cpp.o
 main_6: CMakeFiles/main_6.dir/vis.cpp.o
 main_6: CMakeFiles/main_6.dir/tf.cpp.o
+main_6: CMakeFiles/main_6.dir/segmentation.cpp.o
+main_6: CMakeFiles/main_6.dir/cloud_array.cpp.o
 main_6: CMakeFiles/main_6.dir/build.make
 main_6: /usr/lib/x86_64-linux-gnu/libboost_system.so
 main_6: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -442,7 +494,7 @@ main_6: /usr/lib/x86_64-linux-gnu/libvtksys-6.3.so.6.3.0
 main_6: /usr/lib/x86_64-linux-gnu/libproj.so
 main_6: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
 main_6: CMakeFiles/main_6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main_6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable main_6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main_6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -454,6 +506,8 @@ CMakeFiles/main_6.dir/requires: CMakeFiles/main_6.dir/main.cpp.o.requires
 CMakeFiles/main_6.dir/requires: CMakeFiles/main_6.dir/pipeline.cpp.o.requires
 CMakeFiles/main_6.dir/requires: CMakeFiles/main_6.dir/vis.cpp.o.requires
 CMakeFiles/main_6.dir/requires: CMakeFiles/main_6.dir/tf.cpp.o.requires
+CMakeFiles/main_6.dir/requires: CMakeFiles/main_6.dir/segmentation.cpp.o.requires
+CMakeFiles/main_6.dir/requires: CMakeFiles/main_6.dir/cloud_array.cpp.o.requires
 
 .PHONY : CMakeFiles/main_6.dir/requires
 

@@ -25,7 +25,7 @@ pcl::visualization::PCLVisualizer::Ptr Vis::createViewer(void)
 // Vis member function
 pcl::visualization::PCLVisualizer::Ptr Vis::addCloud(pcl::visualization::PCLVisualizer::Ptr viewer,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
 {
-    cout << "add cloud" << endl;
+    cout << "ADDED CLOUD" << endl;
     nameCounter(cloud_count);
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(cloud, cloud_color.col1, cloud_color.col2, cloud_color.col3);
     viewer->addPointCloud<pcl::PointXYZ> (cloud, single_color, cloud_name);
@@ -36,7 +36,7 @@ pcl::visualization::PCLVisualizer::Ptr Vis::addCloud(pcl::visualization::PCLVisu
 // Vis member function
 pcl::visualization::PCLVisualizer::Ptr Vis::addTf(pcl::visualization::PCLVisualizer::Ptr viewer, tf_struct_data data)
 {
-    cout << "addTf" << endl;
+    cout << "ADDED TF" << endl;
     viewer->addLine (data.center, data.x_axis, 1.0f, 0.0f, 0.0f, "major eigen vector");
     viewer->addLine (data.center, data.y_axis, 0.0f, 1.0f, 0.0f, "middle eigen vector");
     viewer->addLine (data.center, data.z_axis, 0.0f, 0.0f, 1.0f, "minor eigen vector");
@@ -48,7 +48,7 @@ void Vis::showViewer(pcl::visualization::PCLVisualizer::Ptr viewer)
 {
     viewer->addCoordinateSystem (0.1);
     viewer->initCameraParameters ();
-    cout << "show viewer" << endl;
+    cout << "SHOW VIEWER" << endl;
     while (!viewer->wasStopped ())
     {
         viewer->spinOnce (100); 	

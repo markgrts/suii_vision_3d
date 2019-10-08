@@ -201,9 +201,7 @@ main (int argc, char** argv)
         std::stringstream ss;
         ss << input << "_" << j << ".pcd";
         //writer.write<pcl::PointXYZ> (ss.str (), *cloud_cluster, false); //*
-        j++;
-
-        
+        j++;        
 
     }
     //viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");

@@ -177,6 +177,33 @@ pipeline.cpp.s:
 	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/pipeline.cpp.s
 .PHONY : pipeline.cpp.s
 
+tf.o: tf.cpp.o
+
+.PHONY : tf.o
+
+# target to build an object file
+tf.cpp.o:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/tf.cpp.o
+.PHONY : tf.cpp.o
+
+tf.i: tf.cpp.i
+
+.PHONY : tf.i
+
+# target to preprocess a source file
+tf.cpp.i:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/tf.cpp.i
+.PHONY : tf.cpp.i
+
+tf.s: tf.cpp.s
+
+.PHONY : tf.s
+
+# target to generate assembly for a file
+tf.cpp.s:
+	$(MAKE) -f CMakeFiles/main_6.dir/build.make CMakeFiles/main_6.dir/tf.cpp.s
+.PHONY : tf.cpp.s
+
 vis.o: vis.cpp.o
 
 .PHONY : vis.o
@@ -219,6 +246,9 @@ help:
 	@echo "... pipeline.o"
 	@echo "... pipeline.i"
 	@echo "... pipeline.s"
+	@echo "... tf.o"
+	@echo "... tf.i"
+	@echo "... tf.s"
 	@echo "... vis.o"
 	@echo "... vis.i"
 	@echo "... vis.s"

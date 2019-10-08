@@ -7,12 +7,7 @@ using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
 pcl::visualization::PCLVisualizer::Ptr viewer;
 
-struct main_tf_data{
-    pcl::PointXYZ center;
-    pcl::PointXYZ x_axis;
-    pcl::PointXYZ y_axis;
-    pcl::PointXYZ z_axis;
-};
+
 
 struct test{
     int center;
@@ -38,8 +33,8 @@ int main(int argc, char** argv){
 
     //get transformation of PCD
     Transformation transform;
-    main_tf_data tf_data;
-    tf_data = transform.getTf(cloud);
+    tf_data main_tf_data; 
+    main_tf_data = transform.getTf(cloud);
     
 
     //visualize PCD

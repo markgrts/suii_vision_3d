@@ -8,7 +8,8 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 
-struct tf_data{
+struct tf_data
+{
     pcl::PointXYZ center;
     pcl::PointXYZ x_axis;
     pcl::PointXYZ y_axis;
@@ -18,7 +19,7 @@ struct tf_data{
 class Transformation
 {
     private:
-        tf_data transform;
+        tf_data tf_tf_data;
     public:
         Transformation();
         tf_data getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);

@@ -3,7 +3,8 @@
 
 
 //Vis constructor
-Vis::Vis(void){
+Vis::Vis(void)
+{
     cout << "VIEWER CREATED" << endl;
     cout << "##############################" << endl;
     cloud_name = "cloud_";

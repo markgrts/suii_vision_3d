@@ -35,7 +35,7 @@ int main(int argc, char** argv){
     Transformation transform;
     tf_data main_tf_data; 
     main_tf_data = transform.getTf(cloud);
-    
+    cout << main_tf_data.center << endl;
 
     //visualize PCD
     Vis vis;

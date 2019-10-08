@@ -38,16 +38,11 @@ void Vis::showViewer(pcl::visualization::PCLVisualizer::Ptr viewer)
     viewer->addCoordinateSystem (0.1);
     viewer->initCameraParameters ();
     cout << "show viewer" << endl;
-    for(int i = 0; i <= 150; i++)
+    while (!viewer->wasStopped ())
     {
         viewer->spinOnce (100); 	
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
-    /*while (!viewer->wasStopped ())
-    {
-        viewer->spinOnce (100); 	
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    }*/
 }
 
 void Vis::nameCounter(int number)

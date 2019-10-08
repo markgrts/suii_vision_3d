@@ -23,8 +23,7 @@ class Vis
         std::string cloud_name;
         pcl::visualization::PCLVisualizer::Ptr viewer;
         
-    public:
-        
+    public:        
         Vis();
         pcl::visualization::PCLVisualizer::Ptr createViewer (void);
         pcl::visualization::PCLVisualizer::Ptr addCloud(pcl::visualization::PCLVisualizer::Ptr viewer,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);

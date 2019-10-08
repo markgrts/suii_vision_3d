@@ -7,12 +7,8 @@
 #include <pcl/visualization/pcl_visualizer.h>
 
 int i = 0;
-int xmin = 250;
-int xmax = 400;
-int ymin = 100;
-int ymax = 300;
 
-pcl::PointCloud<pcl::PointXYZ>::Ptr points_to_pcl(const rs2::points& points, const rs2::video_frame& color)
+pcl::PointCloud<pcl::PointXYZ>::Ptr points_to_pcl(const rs2::points& points, int xmin, int xmax, int ymin, int ymax)
 {
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
 
@@ -59,15 +55,16 @@ int main(int argc, char * argv[])
     auto depth = frames.get_depth_frame();
     auto color = frames.get_color_frame();
     
-    // Generate the pointcloud and texture mappings
+    // Generate the pointcloud
     points = pc.calculate(depth);
-    pc.map_to(color);
 
-    // Convert to PCL: 
-    auto pcl_points = points_to_pcl(points, color);
+    // Convert stream to PCD of ROI xmin, xmax, ymin, ymax: 
+    auto pcl_points = points_to_pcl(points, 250, 400, 100, 300);
 
+    // Save PCD file
     pcl::io::savePCDFile("test.pcd", *pcl_points);
 
+    //Visualization
     viewer->removeAllPointClouds();
     viewer->addPointCloud<pcl::PointXYZ>(pcl_points);
 

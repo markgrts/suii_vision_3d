@@ -1,6 +1,7 @@
 #ifndef VIS_H
 #define VIS_H
 
+#include "tf_struct.h"
 #include <iostream>
 #include <vector>
 #include <thread>
@@ -22,11 +23,13 @@ class Vis
         color cloud_color;        
         std::string cloud_name;
         pcl::visualization::PCLVisualizer::Ptr viewer;
+        tf_struct_data vis_tf_data;
         
     public:        
         Vis();
         pcl::visualization::PCLVisualizer::Ptr createViewer (void);
         pcl::visualization::PCLVisualizer::Ptr addCloud(pcl::visualization::PCLVisualizer::Ptr viewer,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
+        pcl::visualization::PCLVisualizer::Ptr addTf(pcl::visualization::PCLVisualizer::Ptr viewer, tf_struct_data vis_tf_data);
         void showViewer(pcl::visualization::PCLVisualizer::Ptr viewer);
         void nameCounter(int number);
 };

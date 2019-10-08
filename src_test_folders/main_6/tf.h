@@ -1,6 +1,7 @@
 #ifndef TF_H
 #define TF_H
 
+#include "tf_struct.h"
 #include <iostream>
 #include <vector>
 #include <thread>
@@ -8,21 +9,14 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 
-struct tf_data
-{
-    pcl::PointXYZ center;
-    pcl::PointXYZ x_axis;
-    pcl::PointXYZ y_axis;
-    pcl::PointXYZ z_axis;
-};
 
 class Transformation
 {
     private:
-        tf_data tf_tf_data;
+        tf_struct_data tf_tf_data;
     public:
         Transformation();
-        tf_data getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
+        tf_struct_data getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
 };
 
 #endif

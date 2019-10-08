@@ -2,6 +2,7 @@
 #include "pipeline.h"
 #include "vis.h"
 #include "tf.h"
+#include "tf_struct.h"
 
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
@@ -33,14 +34,14 @@ int main(int argc, char** argv){
 
     //get transformation of PCD
     Transformation transform;
-    tf_data main_tf_data; 
+    tf_struct_data main_tf_data;
     main_tf_data = transform.getTf(cloud);
-    cout << main_tf_data.center << endl;
 
     //visualize PCD
     Vis vis;
     viewer = vis.createViewer();
     viewer = vis.addCloud(viewer, cloud);
+    viewer = vis.addTf(viewer,main_tf_data);
     vis.showViewer(viewer);
     
     return(0);

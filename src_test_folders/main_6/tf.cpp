@@ -8,7 +8,7 @@ Transformation::Transformation()
 
 }
 
-tf_data Transformation::getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
+tf_struct_data Transformation::getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
 {
     pcl::MomentOfInertiaEstimation <pcl::PointXYZ> feature_extractor;
     feature_extractor.setInputCloud (cloud);
@@ -31,10 +31,11 @@ tf_data Transformation::getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
     feature_extractor.getEigenVectors (major_vector, middle_vector, minor_vector);
     feature_extractor.getMassCenter (mass_center);
 
+    int scale = 8;
     pcl::PointXYZ center (mass_center (0), mass_center (1), mass_center (2));
-    pcl::PointXYZ x_axis (major_vector (0) + mass_center (0), major_vector (1) + mass_center (1), major_vector (2) + mass_center (2));
-    pcl::PointXYZ y_axis (middle_vector (0) + mass_center (0), middle_vector (1) + mass_center (1), middle_vector (2) + mass_center (2));
-    pcl::PointXYZ z_axis (minor_vector (0) + mass_center (0), minor_vector (1) + mass_center (1), minor_vector (2) + mass_center (2));
+    pcl::PointXYZ x_axis ((major_vector (0) / scale) + mass_center (0), (major_vector (1) / scale) + mass_center (1), (major_vector (2) / scale) + mass_center (2));
+    pcl::PointXYZ y_axis ((middle_vector (0) / scale) + mass_center (0), (middle_vector (1) / scale) + mass_center (1), (middle_vector (2) / scale) + mass_center (2));
+    pcl::PointXYZ z_axis ((minor_vector (0) / scale) + mass_center (0), (minor_vector (1) / scale) + mass_center (1), (minor_vector (2) / scale) + mass_center (2));
 
     tf_tf_data.center = center;
     tf_tf_data.x_axis = x_axis;

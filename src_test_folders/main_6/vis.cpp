@@ -14,6 +14,7 @@ Vis::Vis(void)
     cloud_count = 0;
 }
 
+// Vis member function
 pcl::visualization::PCLVisualizer::Ptr Vis::createViewer(void)
 {
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
@@ -29,6 +30,16 @@ pcl::visualization::PCLVisualizer::Ptr Vis::addCloud(pcl::visualization::PCLVisu
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(cloud, cloud_color.col1, cloud_color.col2, cloud_color.col3);
     viewer->addPointCloud<pcl::PointXYZ> (cloud, single_color, cloud_name);
     cloud_count ++;
+    return(viewer);
+}
+
+// Vis member function
+pcl::visualization::PCLVisualizer::Ptr Vis::addTf(pcl::visualization::PCLVisualizer::Ptr viewer, tf_struct_data data)
+{
+    cout << "addTf" << endl;
+    viewer->addLine (data.center, data.x_axis, 1.0f, 0.0f, 0.0f, "major eigen vector");
+    viewer->addLine (data.center, data.y_axis, 0.0f, 1.0f, 0.0f, "middle eigen vector");
+    viewer->addLine (data.center, data.z_axis, 0.0f, 0.0f, 1.0f, "minor eigen vector");
     return(viewer);
 }
 

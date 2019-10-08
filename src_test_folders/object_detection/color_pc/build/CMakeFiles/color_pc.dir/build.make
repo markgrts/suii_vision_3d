@@ -57,38 +57,38 @@ include CMakeFiles/color_pc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/color_pc.dir/flags.make
 
-CMakeFiles/color_pc.dir/color_pc_2.cpp.o: CMakeFiles/color_pc.dir/flags.make
-CMakeFiles/color_pc.dir/color_pc_2.cpp.o: ../color_pc_2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/color_pc.dir/color_pc_2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/color_pc.dir/color_pc_2.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_2.cpp
+CMakeFiles/color_pc.dir/color_pc_3.cpp.o: CMakeFiles/color_pc.dir/flags.make
+CMakeFiles/color_pc.dir/color_pc_3.cpp.o: ../color_pc_3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/color_pc.dir/color_pc_3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/color_pc.dir/color_pc_3.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_3.cpp
 
-CMakeFiles/color_pc.dir/color_pc_2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/color_pc.dir/color_pc_2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_2.cpp > CMakeFiles/color_pc.dir/color_pc_2.cpp.i
+CMakeFiles/color_pc.dir/color_pc_3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/color_pc.dir/color_pc_3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_3.cpp > CMakeFiles/color_pc.dir/color_pc_3.cpp.i
 
-CMakeFiles/color_pc.dir/color_pc_2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/color_pc.dir/color_pc_2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_2.cpp -o CMakeFiles/color_pc.dir/color_pc_2.cpp.s
+CMakeFiles/color_pc.dir/color_pc_3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/color_pc.dir/color_pc_3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_3.cpp -o CMakeFiles/color_pc.dir/color_pc_3.cpp.s
 
-CMakeFiles/color_pc.dir/color_pc_2.cpp.o.requires:
+CMakeFiles/color_pc.dir/color_pc_3.cpp.o.requires:
 
-.PHONY : CMakeFiles/color_pc.dir/color_pc_2.cpp.o.requires
+.PHONY : CMakeFiles/color_pc.dir/color_pc_3.cpp.o.requires
 
-CMakeFiles/color_pc.dir/color_pc_2.cpp.o.provides: CMakeFiles/color_pc.dir/color_pc_2.cpp.o.requires
-	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_2.cpp.o.provides.build
-.PHONY : CMakeFiles/color_pc.dir/color_pc_2.cpp.o.provides
+CMakeFiles/color_pc.dir/color_pc_3.cpp.o.provides: CMakeFiles/color_pc.dir/color_pc_3.cpp.o.requires
+	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_3.cpp.o.provides.build
+.PHONY : CMakeFiles/color_pc.dir/color_pc_3.cpp.o.provides
 
-CMakeFiles/color_pc.dir/color_pc_2.cpp.o.provides.build: CMakeFiles/color_pc.dir/color_pc_2.cpp.o
+CMakeFiles/color_pc.dir/color_pc_3.cpp.o.provides.build: CMakeFiles/color_pc.dir/color_pc_3.cpp.o
 
 
 # Object files for target color_pc
 color_pc_OBJECTS = \
-"CMakeFiles/color_pc.dir/color_pc_2.cpp.o"
+"CMakeFiles/color_pc.dir/color_pc_3.cpp.o"
 
 # External object files for target color_pc
 color_pc_EXTERNAL_OBJECTS =
 
-color_pc: CMakeFiles/color_pc.dir/color_pc_2.cpp.o
+color_pc: CMakeFiles/color_pc.dir/color_pc_3.cpp.o
 color_pc: CMakeFiles/color_pc.dir/build.make
 color_pc: /usr/local/lib/librealsense2.so.2.28.0
 color_pc: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
@@ -414,7 +414,7 @@ CMakeFiles/color_pc.dir/build: color_pc
 
 .PHONY : CMakeFiles/color_pc.dir/build
 
-CMakeFiles/color_pc.dir/requires: CMakeFiles/color_pc.dir/color_pc_2.cpp.o.requires
+CMakeFiles/color_pc.dir/requires: CMakeFiles/color_pc.dir/color_pc_3.cpp.o.requires
 
 .PHONY : CMakeFiles/color_pc.dir/requires
 

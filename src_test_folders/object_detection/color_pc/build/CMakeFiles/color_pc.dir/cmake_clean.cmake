@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/color_pc.dir/color_pc_2.cpp.o"
+  "CMakeFiles/color_pc.dir/color_pc_3.cpp.o"
   "color_pc.pdb"
   "color_pc"
 )

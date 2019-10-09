@@ -19,10 +19,10 @@
 class Segmentation
 {
     private:
-        ;
+  
     public:
         Segmentation();
-        pcl::PointCloud<pcl::PointXYZ>::Ptr* getTableSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr *cloud);
+        pcl::PointCloud<pcl::PointXYZ>::Ptr getTableSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
         pcl::PointCloud<pcl::PointXYZ>::Ptr* getObjectSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr *cloud);
 };
 

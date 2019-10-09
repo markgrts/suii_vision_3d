@@ -30,7 +30,7 @@ int main(int argc, char** argv){
 
     //Get segmented PCD's
     Segmentation segment;
-    table = *segment.getTableSeg(&cloud);
+    table = segment.getTableSeg(cloud);
     object = *segment.getObjectSeg(&cloud);
     
     //get transformation of PCD
@@ -41,7 +41,8 @@ int main(int argc, char** argv){
     //visualize PCD
     Vis vis;
     viewer = vis.createViewer();
-    viewer = vis.addCloud(viewer, cloud);
+    viewer = vis.addCloud(viewer, table);
+    //viewer = vis.addCloud(viewer, cloud);
     viewer = vis.addTf(viewer,main_tf_data);
     vis.showViewer(viewer);
     

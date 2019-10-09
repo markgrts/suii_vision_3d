@@ -4,17 +4,12 @@
 #include "tf.h"
 #include "segmentation.h"
 #include "tf_struct.h"
-#include "cloud_array.h"
 
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr table (new pcl::PointCloud<pcl::PointXYZ>);
+pcl::PointCloud<pcl::PointXYZ>::Ptr object (new pcl::PointCloud<pcl::PointXYZ>);
 pcl::visualization::PCLVisualizer::Ptr viewer;
-std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> main_clouds;
-
-struct test{
-    int center;
-
-};
 
 int main(int argc, char** argv){
     string file_name = "";
@@ -32,20 +27,12 @@ int main(int argc, char** argv){
     //Get PCD from Pipeline.cpp
     Pipeline pipe;
     cloud = pipe.getCloud(file_name);
-    //Create cloud array
-    CloudArray array_test;
-    //array_test.printVector();
-    array_test.setVector();
-    //array_test.printVector();
-    std::vector<int> v;
-    v = array_test.giveVector();
-    for(int n : v){
-        std::cout << n << std::endl;
-    }
 
     //Get segmented PCD's
     Segmentation segment;
-
+    table = *segment.getTableSeg(&cloud);
+    object = *segment.getObjectSeg(&cloud);
+    
     //get transformation of PCD
     Transformation transform;
     tf_struct_data main_tf_data;

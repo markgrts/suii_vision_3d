@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.cpp
-cloud_array.h
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.h
-iostream
--
-
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.h
-iostream
--
-vector
--
-thread
--
-pcl/features/moment_of_inertia_estimation.h
--
-pcl/io/pcd_io.h
--
-pcl/point_types.h
--
-
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/main.cpp
 iostream
 -
@@ -39,8 +19,6 @@ segmentation.h
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.h
 tf_struct.h
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/tf_struct.h
-cloud_array.h
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/cloud_array.h
 
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/pipeline.cpp
 pipeline.h

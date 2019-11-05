@@ -1,3 +1,4 @@
+#include <iostream>
 #include <pcl/io/io.h>
 #include <pcl/io/pcd_io.h>
 #include <pcl/filters/passthrough.h>
@@ -6,7 +7,7 @@
 
 
 // Define min and max for X, Y and Z
-float minX = -0.2, minY = -0.2, minZ = -2.5;
+float minX = -0.2, minY = -0.2, minZ = 0.001;
 float maxX = +0.2, maxY = +0.2, maxZ = +2.5;
 
 int main (int argc, char** argv)
@@ -23,6 +24,9 @@ int main (int argc, char** argv)
     boxFilter.setMax(Eigen::Vector4f(maxX, maxY, maxZ, 1.0));
     boxFilter.setInputCloud(body);
     boxFilter.filter(*bodyFiltered);
+
+    std::cerr << "PointCloud after filtering: " << bodyFiltered->width * bodyFiltered->height 
+    << " data points (" << pcl::getFieldsList (*bodyFiltered) << ").";
 
     //add dsampled_ to filename that gets saved
     std::string s;

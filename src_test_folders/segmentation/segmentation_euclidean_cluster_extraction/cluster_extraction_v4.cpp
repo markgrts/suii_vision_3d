@@ -159,7 +159,7 @@ main (int argc, char** argv)
         extract.filter (*cloud_f);
         *cloud_filtered = *cloud_f;
     }
-
+    
     /*
     pcl::visualization::PCLVisualizer::Ptr viewer2 (new pcl::visualization::PCLVisualizer ("3D Viewer"));
     viewer2->setBackgroundColor (0, 0, 0);
@@ -213,6 +213,7 @@ main (int argc, char** argv)
         j++;        
 
     }
+    
     //viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
     viewer->addCoordinateSystem (0.1);
     viewer->initCameraParameters ();

@@ -1,6 +1,7 @@
 #ifndef SEGMENTATION_H
 #define SEGMENTATION_H
 
+#include "obj_struct.h"
 #include <iostream>
 #include <thread>
 #include <pcl/ModelCoefficients.h>
@@ -19,11 +20,12 @@
 class Segmentation
 {
     private:
-  
+        obj_struct objs_data;
     public:
         Segmentation();
-        pcl::PointCloud<pcl::PointXYZ>::Ptr getTableSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
-        pcl::PointCloud<pcl::PointXYZ>::Ptr* getObjectSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr *cloud);
+        obj_struct getTableSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
+        pcl::PointCloud<pcl::PointXYZ>::Ptr getObjectSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
+        //pcl::PointCloud<pcl::PointXYZ>::Ptr* getObjectSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr *cloud);
 };
 
 #endif

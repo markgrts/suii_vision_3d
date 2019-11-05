@@ -19,6 +19,20 @@ segmentation.h
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.h
 tf_struct.h
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/tf_struct.h
+obj_struct.h
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/obj_struct.h
+
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/obj_struct.h
+iostream
+-
+vector
+-
+thread
+-
+pcl/io/pcd_io.h
+-
+pcl/point_types.h
+-
 
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/pipeline.cpp
 pipeline.h
@@ -43,6 +57,8 @@ iostream
 -
 
 /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.h
+obj_struct.h
+/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/obj_struct.h
 iostream
 -
 thread

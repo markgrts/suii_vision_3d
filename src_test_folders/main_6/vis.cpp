@@ -7,7 +7,6 @@ Vis::Vis(void)
 {
     cout << "VIEWER CREATED" << endl;
     cout << "##############################" << endl;
-    cloud_name = "cloud_";
     cloud_color.col1 = 0;
     cloud_color.col2 = 255;
     cloud_color.col3 = 0;    
@@ -25,10 +24,12 @@ pcl::visualization::PCLVisualizer::Ptr Vis::createViewer(void)
 // Vis member function
 pcl::visualization::PCLVisualizer::Ptr Vis::addCloud(pcl::visualization::PCLVisualizer::Ptr viewer,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
 {
-    cout << "ADDED CLOUD" << endl;
+    std::string cluster_name = "sample_cloud_" + std::to_string(cloud_count);\
+    std::cout << "added cloud with name: " << cluster_name << std::endl;
     nameCounter(cloud_count);
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(cloud, cloud_color.col1, cloud_color.col2, cloud_color.col3);
-    viewer->addPointCloud<pcl::PointXYZ> (cloud, single_color, cloud_name);
+    cloud_name += std::to_string(cloud_count);
+    viewer->addPointCloud<pcl::PointXYZ> (cloud, single_color, cluster_name);
     cloud_count ++;
     return(viewer);
 }

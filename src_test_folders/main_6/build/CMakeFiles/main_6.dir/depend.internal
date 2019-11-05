@@ -3,6 +3,7 @@
 
 CMakeFiles/main_6.dir/main.cpp.o
  /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/main.cpp
+ /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/obj_struct.h
  /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/pipeline.h
  /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.h
  /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/tf.h
@@ -962,6 +963,7 @@ CMakeFiles/main_6.dir/pipeline.cpp.o
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/sys/mman.h
 CMakeFiles/main_6.dir/segmentation.cpp.o
+ /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/obj_struct.h
  /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.cpp
  /home/jeroen/workspaces/suii_vision_3d/src_test_folders/main_6/segmentation.h
  /usr/include/eigen3/Eigen/Cholesky

@@ -1,8 +1,6 @@
 #include "vis.h"
-#include <iostream>
 
-
-//Vis constructor
+//Visualisation constructor
 Vis::Vis(void)
 {
     cout << "VIEWER CREATED" << endl;
@@ -14,7 +12,7 @@ Vis::Vis(void)
     tf_count = 0;
 }
 
-// Vis member function
+// Visualisation member function
 pcl::visualization::PCLVisualizer::Ptr Vis::createViewer(void)
 {
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
@@ -22,11 +20,10 @@ pcl::visualization::PCLVisualizer::Ptr Vis::createViewer(void)
     return(viewer);
 }
 
-// Vis member function
+// Visualisation member function
 pcl::visualization::PCLVisualizer::Ptr Vis::addCloud(pcl::visualization::PCLVisualizer::Ptr viewer,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
 {
-    std::string cluster_name = "sample_cloud_" + std::to_string(cloud_count);\
-    std::cout << "added cloud with name: " << cluster_name << std::endl;
+    std::string cluster_name = "sample_cloud_" + std::to_string(cloud_count);
     nameCounter(cloud_count);
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(cloud, cloud_color.col1, cloud_color.col2, cloud_color.col3);
     cloud_name += std::to_string(cloud_count);
@@ -35,10 +32,9 @@ pcl::visualization::PCLVisualizer::Ptr Vis::addCloud(pcl::visualization::PCLVisu
     return(viewer);
 }
 
-// Vis member function
+// Visualisation member function
 pcl::visualization::PCLVisualizer::Ptr Vis::addTf(pcl::visualization::PCLVisualizer::Ptr viewer, tf_struct_data data)
 {
-    cout << "ADDED TF" << endl;
     viewer->addLine (data.center, data.x_axis, 1.0f, 0.0f, 0.0f, ("major eigen vector " + std::to_string(tf_count)));
     viewer->addLine (data.center, data.y_axis, 0.0f, 1.0f, 0.0f, ("middle eigen vector" + std::to_string(tf_count)));
     viewer->addLine (data.center, data.z_axis, 0.0f, 0.0f, 1.0f, ("minor eigen vector" + std::to_string(tf_count)));
@@ -46,12 +42,11 @@ pcl::visualization::PCLVisualizer::Ptr Vis::addTf(pcl::visualization::PCLVisuali
     return(viewer);
 }
 
-// Vis member function
+// Visualisations member function
 void Vis::showViewer(pcl::visualization::PCLVisualizer::Ptr viewer)
 {
     viewer->addCoordinateSystem (0.1);
     viewer->initCameraParameters ();
-    cout << "SHOW VIEWER" << endl;
     while (!viewer->wasStopped ())
     {
         viewer->spinOnce (100); 	
@@ -59,13 +54,14 @@ void Vis::showViewer(pcl::visualization::PCLVisualizer::Ptr viewer)
     }
 }
 
+// Visualisations member function
 void Vis::nameCounter(int number)
 {
     cloud_name = cloud_name + std::to_string(number);
     if(number == 0){
-        cloud_color.col1 = 255;
-        cloud_color.col2 = 255;
-        cloud_color.col3 = 153;
+        cloud_color.col1 = 224;
+        cloud_color.col2 = 224;
+        cloud_color.col3 = 224;
     }
     else if(number == 1){
         cloud_color.col1 = 255;

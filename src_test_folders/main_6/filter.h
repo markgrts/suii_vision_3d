@@ -1,6 +1,7 @@
 #ifndef FILTER_H
 #define FILTER_H
 
+#include <iostream>
 #include <pcl/io/io.h>
 #include <pcl/io/pcd_io.h>
 #include <pcl/filters/passthrough.h>

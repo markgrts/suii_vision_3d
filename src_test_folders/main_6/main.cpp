@@ -42,17 +42,16 @@ int main(int argc, char** argv){
     object = segment.getObjectSeg(objects_struct.object);
     //object = *segment.getObjectSeg(&cloud);
     
-    //get transformation of PCD
+    //Get tf of table
     Transformation transform;
     tf_struct_data table_tf;
     table_tf = transform.getTf(objects_struct.table);
-    std::cout << table_tf.center << std::endl;
 
+    //Get tf of object
     tf_struct_data object_tf;
-    //object_tf = transform.getTf(object);
     object_tf = transform.getTf(objects_struct.object);
-    std::cout << object_tf.center << std::endl;
-    
+
+        
     //visualize PCD
     Vis vis;
     viewer = vis.createViewer();
@@ -61,6 +60,7 @@ int main(int argc, char** argv){
     viewer = vis.addCloud(viewer, object);
     viewer = vis.addTf(viewer, object_tf);
     vis.showViewer(viewer);
+    
     
     return(0);
 }

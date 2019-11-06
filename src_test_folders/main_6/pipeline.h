@@ -8,8 +8,6 @@
 
 class Pipeline
 {
-    private:
-        
     public:
         Pipeline();
         pcl::PointCloud<pcl::PointXYZ>::Ptr getCloud(std::string file_name);

@@ -51,7 +51,6 @@ int main(int argc, char** argv){
     tf_struct_data object_tf;
     object_tf = transform.getTf(objects_struct.object);
 
-        
     //visualize PCD
     Vis vis;
     viewer = vis.createViewer();

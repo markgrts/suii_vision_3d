@@ -40,18 +40,18 @@ int main(int argc, char** argv){
     Transformation transform;
     tf_struct_data table_tf;
     table_tf = transform.getTf(objects_struct.table);
-    //std::cout << table_tf.center << std::endl;
+    std::cout << table_tf.center << std::endl;
 
     tf_struct_data object_tf;
     //object_tf = transform.getTf(object);
     object_tf = transform.getTf(objects_struct.object);
-    //std::cout << object_tf.center << std::endl;
-
+    std::cout << object_tf.center << std::endl;
+    
     //visualize PCD
     Vis vis;
     viewer = vis.createViewer();
     viewer = vis.addCloud(viewer, objects_struct.table);
-    //viewer = vis.addTf(viewer, table_tf);
+    viewer = vis.addTf(viewer, table_tf);
     viewer = vis.addCloud(viewer, object);
     viewer = vis.addTf(viewer, object_tf);
     vis.showViewer(viewer);

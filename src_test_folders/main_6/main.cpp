@@ -5,6 +5,7 @@
 #include "segmentation.h"
 #include "tf_struct.h"
 #include "obj_struct.h"
+#include "filter.h"
 
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
@@ -28,6 +29,11 @@ int main(int argc, char** argv){
     //Get PCD from Pipeline.cpp
     Pipeline pipe;
     cloud = pipe.getCloud(file_name);
+
+    //Filter cloud
+    Filter filter;
+    cloud = filter.pt_Filter(cloud);
+    cloud = filter.d_Filter(cloud);
 
     //Get segmented PCD's
     Segmentation segment;

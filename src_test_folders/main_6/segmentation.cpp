@@ -19,7 +19,7 @@ obj_struct Segmentation::getTableSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
     vg.setInputCloud (cloud);
     vg.setLeafSize (0.001f, 0.001f, 0.001f);
     vg.filter (*cloud_filtered);
-    std::cout << "PointCloud after filtering has: " << cloud_filtered->points.size ()  << " data points." << std::endl; //*
+    std::cout << "PointCloud after filtering has: " << cloud_filtered->points.size ()  << " data points." << std::endl; 
 
     // Create the segmentation object for the planar model and set all the parameters
     pcl::SACSegmentation<pcl::PointXYZ> seg;

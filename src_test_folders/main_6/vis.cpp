@@ -63,9 +63,9 @@ void Vis::nameCounter(int number)
 {
     cloud_name = cloud_name + std::to_string(number);
     if(number == 0){
-        cloud_color.col1 = 0;
-        cloud_color.col2 = 200;
-        cloud_color.col3 = 0;
+        cloud_color.col1 = 255;
+        cloud_color.col2 = 255;
+        cloud_color.col3 = 153;
     }
     else if(number == 1){
         cloud_color.col1 = 255;

@@ -9,7 +9,7 @@ int main (int argc, char** argv) //Add filename of file that you want to open
     return (0);
 
   pcl::PCLPointCloud2::Ptr cloud (new pcl::PCLPointCloud2 ());
-  pcl::PCLPointCloud2::Ptr cloud_filtered (new pcl::PCLPointCloud2 ());
+  
 
   // Fill in the cloud data
   pcl::PCDReader reader;

@@ -29,7 +29,7 @@ void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_nam
 }
 
 // getTf member function
-bool Gettf::build_center(string name, vector<int> roi, bool debug)
+vector<obj_struct> Gettf::build_center(string name, vector<int> roi, bool debug)
 {
     //Get segmented PCD's
     Segmentation segment;
@@ -39,8 +39,13 @@ bool Gettf::build_center(string name, vector<int> roi, bool debug)
     //Get tf of table
     Transformation transform;
     tf_struct_data table_tf;
+    ////////////////////////////////////////////////////////////////////
     table_tf = transform.getTf(objects_struct.table);
-
+    table_tf.obj_name = name;
+    list.push_back(table_tf);
+    cout << list << endl;
+    ////////////////////////////////////////////////////////////////////
+    cout << table_tf.center << table_tf.x_axis << table_tf.y_axis << table_tf.z_axis << table_tf.obj_name << endl;
     //Get tf of object
     tf_struct_data object_tf;
     object_tf = transform.getTf(objects_struct.object);
@@ -58,6 +63,8 @@ bool Gettf::build_center(string name, vector<int> roi, bool debug)
         vis.showViewer(viewer);
         cout << "done building center " << roi.at(1) << endl;
     }
+
+    return(list);
 }
 
 /*

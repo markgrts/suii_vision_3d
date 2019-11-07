@@ -3,6 +3,7 @@
 
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+vector<obj_struct> list;
 
 int main(int argc, char** argv){
     string file_name = "";
@@ -29,7 +30,7 @@ int main(int argc, char** argv){
     }
     string name = "test";
     bool debug = true;
-    bool done = gettf.build_center(name, roi, debug);
+    list = gettf.build_center(name, roi, debug);
 
     gettf.reset_view();  
     

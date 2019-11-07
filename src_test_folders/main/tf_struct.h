@@ -14,6 +14,7 @@ struct tf_struct_data
     pcl::PointXYZ x_axis;
     pcl::PointXYZ y_axis;
     pcl::PointXYZ z_axis;
+    std::string obj_name;
 };
 
 #endif

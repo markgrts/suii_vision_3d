@@ -20,10 +20,11 @@ class Gettf
         pcl::PointCloud<pcl::PointXYZ>::Ptr object;
         pcl::visualization::PCLVisualizer::Ptr viewer;
         obj_struct objects_struct;
+        vector<obj_struct> list;
     public:
         Gettf();
         void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string cloud_name);
-        bool build_center(string, vector<int>, bool);
+        vector<obj_struct> build_center(string, vector<int>, vector<obj_struct>,bool);
         //std::list<int> build_view(void);
         bool reset_view(void);
 };

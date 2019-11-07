@@ -38,7 +38,9 @@ int main(int argc, char** argv){
     //Get segmented PCD's
     Segmentation segment;
     obj_struct objects_struct;
+    //Segment.getTableSeg gets table segmentation and cuts it out of the PCD. It will retrun the table PCD and a PCD containing everything else
     objects_struct = segment.getTableSeg(cloud);
+    //Need to implement ROI for specific objects and include pt_Filter cut the objects out
     object = segment.getObjectSeg(objects_struct.object);
     //object = *segment.getObjectSeg(&cloud);
     
@@ -52,6 +54,7 @@ int main(int argc, char** argv){
     object_tf = transform.getTf(objects_struct.object);
 
     //visualize PCD
+    //Put visualisation in a debug mode
     Vis vis;
     viewer = vis.createViewer();
     viewer = vis.addCloud(viewer, objects_struct.table);

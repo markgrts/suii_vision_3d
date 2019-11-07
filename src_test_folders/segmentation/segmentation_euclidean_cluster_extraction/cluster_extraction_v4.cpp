@@ -103,7 +103,7 @@ main (int argc, char** argv)
     input.resize(sz-4);
     std::cout << "filename without .pcd is: " << input << std::endl;
     //std::cout << "input: " << argv[1] << std::endl;
-    //std::string one ("hey");
+    //std::string one ("hey");s
     //std::string two (".pcd");
     //std::string total;
     //total = input - two;
@@ -159,10 +159,19 @@ main (int argc, char** argv)
         extract.filter (*cloud_f);
         *cloud_filtered = *cloud_f;
     }
+    
+    /*
+    pcl::visualization::PCLVisualizer::Ptr viewer2 (new pcl::visualization::PCLVisualizer ("3D Viewer"));
+    viewer2->setBackgroundColor (0, 0, 0);
+    viewer2->addPointCloud<pcl::PointXYZ> (cloud_plane, "test");
+    viewer2->addCoordinateSystem (0.1);
+    viewer2->initCameraParameters ();
+    */
 
     // Creating the KdTree object for the search method of the extraction
     pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
     tree->setInputCloud (cloud_filtered);
+    
 
     std::vector<pcl::PointIndices> cluster_indices;
     pcl::EuclideanClusterExtraction<pcl::PointXYZ> ec;
@@ -201,11 +210,10 @@ main (int argc, char** argv)
         std::stringstream ss;
         ss << input << "_" << j << ".pcd";
         //writer.write<pcl::PointXYZ> (ss.str (), *cloud_cluster, false); //*
-        j++;
-
-        
+        j++;        
 
     }
+    
     //viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
     viewer->addCoordinateSystem (0.1);
     viewer->initCameraParameters ();
@@ -213,6 +221,7 @@ main (int argc, char** argv)
     while (!viewer->wasStopped ())
     {
         viewer->spinOnce (100); 	
+        //viewer2->spinOnce (100);
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 

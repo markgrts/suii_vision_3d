@@ -1,3 +1,0 @@
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles/rebuild_cache.dir
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles/main.dir
-/home/jeroen/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles/edit_cache.dir

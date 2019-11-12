@@ -43,10 +43,11 @@ obj_struct Segmentation::getTableSeg(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
 
         // Get the points associated with the planar surface
         extract.filter (*cloud_plane);
-
+        //std::cout << "PointCloud representing the planar component: " << cloud_plane->points.size () << " data points." << std::endl;
         // Remove the planar inliers, extract the rest
         extract.setNegative (true);
         extract.filter (*cloud_f);
+        //std::cout << "PointCloud representing the segmented component: " << cloud_f->points.size () << " data points." << std::endl;
         *cloud = *cloud_f;
     }
 

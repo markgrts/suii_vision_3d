@@ -25,6 +25,7 @@ class Gettf
         tf_struct_data center;
         tf_struct_data table_tf;
         tf_struct_data object_tf;
+        vector<tf_struct_data> center_list;
         //Creating objects of classes
         Pipeline pipe;
         Filter filter;
@@ -35,6 +36,7 @@ class Gettf
     public:
         Gettf(bool);
         void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string);
+        //time_test only for testing speed of sending PCD
         pcl::PointCloud<pcl::PointXYZ>::Ptr time_test(void);
         void build_center(string, vector<int>, bool);
         void show_viewer(void);

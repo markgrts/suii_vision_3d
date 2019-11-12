@@ -5,9 +5,9 @@ Gettf::Gettf(bool debug)
 {
     cout << "GetTf CREATED" << endl;
     cout << "##############################" << endl;
-    // create viewer
     if (debug)
     {
+        //Create viewer
         viewer = vis.createViewer();
     }
 }
@@ -21,15 +21,15 @@ void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_nam
     cloud = filter.d_Filter(cloud);
     //Segment.getTableSeg gets table segmentation and cuts it out of the PCD. It will retrun the table PCD and a PCD containing everything else
     objects_struct = segment.getTableSeg(cloud);
-    //Need to implement ROI for specific objects and include pt_Filter cut the objects out
 }
 
 pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test(void)
 {
+    //This function is purely for testing the speed of sending a PCD!
     return(objects_struct.table);
 }
 
-// getTf member function
+//getTf member function
 void Gettf::build_center(string name, vector<int> roi, bool debug)
 {
     //Need to implement ROI for specific objects and include pt_Filter cut the objects out
@@ -62,14 +62,14 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
         }
     }
 
-    cout << "name: " << center.name << endl;
-    cout << "x: " << center.x_axis << endl;
-    cout << "y: " << center.y_axis << endl;
-    cout << "z: " << center.z_axis << endl;
-
-   // return(center);
+    if (debug)
+    {
+        cout << "name: " << center.name << endl;
+        cout << "x: " << center.x_axis << endl;
+        cout << "y: " << center.y_axis << endl;
+        cout << "z: " << center.z_axis << endl;
+    }
 }
-
 
 /*
 // getTf member function
@@ -80,7 +80,7 @@ std::list<int> Gettf::build_view(void)
 */
 
 void Gettf::show_viewer(void)
-{
+{   
     vis.showViewer(viewer);
 }
 

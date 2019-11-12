@@ -6,20 +6,18 @@ using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
 
 int main(int argc, char** argv){
-    bool time_debug = true;
+    string file_name = "";
     clock_t start;
     double duration;
-    string name = "table";
-    bool debug = false;
+    bool time_debug = false;
+    bool debug = true;
 
     start = clock();
     if (time_debug){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
         std::cout<<"starting time: "<< duration <<'\n';
     }
-
     
-    string file_name = "";
     file_name = argv[1];
     cout << "##############################" << endl;
     cout << "MAIN \n"  << "file_name: " << argv[1] << endl;
@@ -34,7 +32,6 @@ int main(int argc, char** argv){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
         std::cout<<"loading pcd from pc: "<< duration <<'\n';
     }
-
 
     //get PCD
     Gettf gettf(debug);
@@ -58,11 +55,17 @@ int main(int argc, char** argv){
         roi.push_back(i);
     }
     
+    if (time_debug){
+        duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
+        std::cout<<"start build table : "<< duration <<'\n';
+    }
+
+    string name = "table";
     gettf.build_center(name, roi, debug);
 
     if (time_debug){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
-        std::cout<<"build table center: "<< duration <<'\n';
+        std::cout<<"end buil table: "<< duration <<'\n';
     }
 
     name = "object";
@@ -70,7 +73,7 @@ int main(int argc, char** argv){
 
     if (time_debug){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
-        std::cout<<"build obje center: "<< duration <<'\n';
+        std::cout<<"build object center: "<< duration <<'\n';
     } 
 
     if (debug){

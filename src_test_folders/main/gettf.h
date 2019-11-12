@@ -15,16 +15,28 @@ using namespace std;
 class Gettf
 {
     private:
+        //creating PCL variables
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud;
         pcl::PointCloud<pcl::PointXYZ>::Ptr table;
         pcl::PointCloud<pcl::PointXYZ>::Ptr object;
         pcl::visualization::PCLVisualizer::Ptr viewer;
+        //Creating self made variables
         obj_struct objects_struct;
-        vector<obj_struct> list;
+        tf_struct_data center;
+        tf_struct_data table_tf;
+        tf_struct_data object_tf;
+        //Creating objects of classes
+        Pipeline pipe;
+        Filter filter;
+        Segmentation segment;
+        Transformation transform;
+        Vis vis;
+        
     public:
         Gettf();
-        void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string cloud_name);
-        vector<obj_struct> build_center(string, vector<int>, vector<obj_struct>,bool);
+        void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string);
+        pcl::PointCloud<pcl::PointXYZ>::Ptr time_test();
+        void build_center(string, vector<int>, bool);
         //std::list<int> build_view(void);
         bool reset_view(void);
 };

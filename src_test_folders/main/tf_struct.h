@@ -8,13 +8,15 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 
+using namespace std;
+
 struct tf_struct_data
 {
+    string name;
     pcl::PointXYZ center;
     pcl::PointXYZ x_axis;
     pcl::PointXYZ y_axis;
     pcl::PointXYZ z_axis;
-    std::string obj_name;
 };
 
 #endif

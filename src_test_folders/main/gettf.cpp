@@ -3,58 +3,62 @@
 //getTf constructor
 Gettf::Gettf(void)
 {
-    cout << "FILTER CREATED" << endl;
+    cout << "GetTf CREATED" << endl;
     cout << "##############################" << endl;
 }
 
 void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_name)
 {
     //Get PCD from Pipeline.cpp
-    Pipeline pipe;
     cloud = pipe.getCloud(cloud_name);
     //Filter cloud
-    Filter filter;
     cloud = filter.pt_Filter(cloud);
     cloud = filter.d_Filter(cloud);
-
-    //Get segmented PCD's
-    Segmentation segment;
-
     //Segment.getTableSeg gets table segmentation and cuts it out of the PCD. It will retrun the table PCD and a PCD containing everything else
     objects_struct = segment.getTableSeg(cloud);
+    cout << *cloud << endl;
     //Need to implement ROI for specific objects and include pt_Filter cut the objects out
-        
-    //object = *segment.getObjectSeg(&cloud);
-    cout << "loaded cloud" << endl;
+}
+
+pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test()
+{
+    cout << cloud << endl;
+    return(cloud);
 }
 
 // getTf member function
-vector<obj_struct> Gettf::build_center(string name, vector<int> roi, bool debug)
+void Gettf::build_center(string name, vector<int> roi, bool debug)
 {
-    //Get segmented PCD's
-    Segmentation segment;
     //Need to implement ROI for specific objects and include pt_Filter cut the objects out
-    objects_struct.object = segment.getObjectSeg(objects_struct.object);
+    if (name == "table"){
+        table_tf = transform.getTf(objects_struct.table);
+        center.name = name;
+        center.center = table_tf.center;
+        center.x_axis = table_tf.x_axis;
+        center.y_axis = table_tf.y_axis;
+        center.z_axis = table_tf.z_axis;
+    }
+    else{
+        //Add pt_filter from ROI
+        objects_struct.object = segment.getObjectSeg(objects_struct.object);
+        object_tf = transform.getTf(objects_struct.object);
+        center.name = name;
+        center.center = object_tf.center;
+        center.x_axis = object_tf.x_axis;
+        center.y_axis = object_tf.y_axis;
+        center.z_axis = object_tf.z_axis;
+    }
 
-    //Get tf of table
-    Transformation transform;
-    tf_struct_data table_tf;
-    ////////////////////////////////////////////////////////////////////
-    table_tf = transform.getTf(objects_struct.table);
-    table_tf.obj_name = name;
-    list.push_back(table_tf);
-    cout << list << endl;
-    ////////////////////////////////////////////////////////////////////
-    cout << table_tf.center << table_tf.x_axis << table_tf.y_axis << table_tf.z_axis << table_tf.obj_name << endl;
-    //Get tf of object
-    tf_struct_data object_tf;
-    object_tf = transform.getTf(objects_struct.object);
+    cout << "name: " << center.name << endl;
+    cout << "x: " << center.x_axis << endl;
+    cout << "y: " << center.y_axis << endl;
+    cout << "z: " << center.z_axis << endl;
+    
 
     if (debug)
     {
         //visualize PCD
         //Put visualisation in a debug mode
-        Vis vis;
         viewer = vis.createViewer();
         viewer = vis.addCloud(viewer, objects_struct.table);
         viewer = vis.addTf(viewer, table_tf);
@@ -64,8 +68,9 @@ vector<obj_struct> Gettf::build_center(string name, vector<int> roi, bool debug)
         cout << "done building center " << roi.at(1) << endl;
     }
 
-    return(list);
+   // return(center);
 }
+
 
 /*
 // getTf member function
@@ -73,7 +78,6 @@ std::list<int> Gettf::build_view(void)
 {
     ;
 }
-
 */
 
 // getTf member function

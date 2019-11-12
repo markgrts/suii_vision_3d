@@ -40,6 +40,7 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
         center.x_axis = table_tf.x_axis;
         center.y_axis = table_tf.y_axis;
         center.z_axis = table_tf.z_axis;
+        
         if (debug)
         {
             viewer = vis.addCloud(viewer, objects_struct.table);

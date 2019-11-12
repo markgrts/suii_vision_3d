@@ -33,10 +33,11 @@ class Gettf
         Vis vis;
         
     public:
-        Gettf();
+        Gettf(bool);
         void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string);
-        pcl::PointCloud<pcl::PointXYZ>::Ptr time_test();
+        pcl::PointCloud<pcl::PointXYZ>::Ptr time_test(void);
         void build_center(string, vector<int>, bool);
+        void show_viewer(void);
         //std::list<int> build_view(void);
         bool reset_view(void);
 };

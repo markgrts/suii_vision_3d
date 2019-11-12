@@ -9,6 +9,8 @@ int main(int argc, char** argv){
     bool time_debug = true;
     clock_t start;
     double duration;
+    string name = "table";
+    bool debug = false;
 
     start = clock();
     if (time_debug){
@@ -35,7 +37,7 @@ int main(int argc, char** argv){
 
 
     //get PCD
-    Gettf gettf;
+    Gettf gettf(debug);
     gettf.send_pcd(cloud, file_name);
 
     if (time_debug){
@@ -45,7 +47,6 @@ int main(int argc, char** argv){
 
     //FOR TESTING SENDING TIME PCD
     cloud = gettf.time_test();
-    cout << cloud << endl;
     if (time_debug){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
         std::cout<<"DURATION OF SENDING A PCD FROM FILE TO FILE : "<< duration <<'\n';
@@ -56,8 +57,7 @@ int main(int argc, char** argv){
     for(int i = 1; i <= 4; i++){
         roi.push_back(i);
     }
-    string name = "table";
-    bool debug = false;
+    
     gettf.build_center(name, roi, debug);
 
     if (time_debug){
@@ -72,6 +72,10 @@ int main(int argc, char** argv){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
         std::cout<<"build obje center: "<< duration <<'\n';
     } 
+
+    if (debug){
+        gettf.show_viewer();
+    }
 
     gettf.reset_view();  
     

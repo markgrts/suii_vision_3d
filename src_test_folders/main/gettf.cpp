@@ -1,10 +1,15 @@
 #include "gettf.h"
 
 //getTf constructor
-Gettf::Gettf(void)
+Gettf::Gettf(bool debug)
 {
     cout << "GetTf CREATED" << endl;
     cout << "##############################" << endl;
+    // create viewer
+    if (debug)
+    {
+        viewer = vis.createViewer();
+    }
 }
 
 void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_name)
@@ -16,14 +21,12 @@ void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_nam
     cloud = filter.d_Filter(cloud);
     //Segment.getTableSeg gets table segmentation and cuts it out of the PCD. It will retrun the table PCD and a PCD containing everything else
     objects_struct = segment.getTableSeg(cloud);
-    cout << *cloud << endl;
     //Need to implement ROI for specific objects and include pt_Filter cut the objects out
 }
 
-pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test()
+pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test(void)
 {
-    cout << cloud << endl;
-    return(cloud);
+    return(objects_struct.table);
 }
 
 // getTf member function
@@ -37,6 +40,11 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
         center.x_axis = table_tf.x_axis;
         center.y_axis = table_tf.y_axis;
         center.z_axis = table_tf.z_axis;
+        if (debug)
+        {
+            viewer = vis.addCloud(viewer, objects_struct.table);
+            viewer = vis.addTf(viewer, table_tf);
+        }
     }
     else{
         //Add pt_filter from ROI
@@ -47,26 +55,17 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
         center.x_axis = object_tf.x_axis;
         center.y_axis = object_tf.y_axis;
         center.z_axis = object_tf.z_axis;
+        if (debug)
+        {
+            viewer = vis.addCloud(viewer, objects_struct.object);
+            viewer = vis.addTf(viewer, object_tf);
+        }
     }
 
     cout << "name: " << center.name << endl;
     cout << "x: " << center.x_axis << endl;
     cout << "y: " << center.y_axis << endl;
     cout << "z: " << center.z_axis << endl;
-    
-
-    if (debug)
-    {
-        //visualize PCD
-        //Put visualisation in a debug mode
-        viewer = vis.createViewer();
-        viewer = vis.addCloud(viewer, objects_struct.table);
-        viewer = vis.addTf(viewer, table_tf);
-        viewer = vis.addCloud(viewer, objects_struct.object);
-        viewer = vis.addTf(viewer, object_tf);
-        vis.showViewer(viewer);
-        cout << "done building center " << roi.at(1) << endl;
-    }
 
    // return(center);
 }
@@ -79,6 +78,11 @@ std::list<int> Gettf::build_view(void)
     ;
 }
 */
+
+void Gettf::show_viewer(void)
+{
+    vis.showViewer(viewer);
+}
 
 // getTf member function
 bool Gettf::reset_view(void)

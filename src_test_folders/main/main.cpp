@@ -10,7 +10,7 @@ int main(int argc, char** argv){
     clock_t start;
     double duration;
     bool time_debug = false;
-    bool debug = true;
+    bool debug = false;
 
     start = clock();
     if (time_debug){

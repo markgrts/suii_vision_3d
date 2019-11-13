@@ -2,6 +2,7 @@
 #define GET_TF_H
 
 #include <iostream>
+#include <vector>
 #include "pipeline.h"
 #include "vis.h"
 #include "tf.h"

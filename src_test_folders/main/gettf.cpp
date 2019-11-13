@@ -1,4 +1,7 @@
 #include "gettf.h"
+#include <iostream>
+
+using namespace std;
 
 //getTf constructor
 Gettf::Gettf(bool debug)
@@ -62,21 +65,26 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
             viewer = vis.addTf(viewer, object_tf);
         }
     }
+    
+    center_list.push_back(center);
 
     if (debug)
     {
+        //cout << "struct : " << center << endl;
         cout << "name: " << center.name << endl;
+        cout << "center: " << center.center << endl;
         cout << "x: " << center.x_axis << endl;
         cout << "y: " << center.y_axis << endl;
         cout << "z: " << center.z_axis << endl;
     }
 }
-
+    
 /*
 // getTf member function
 std::list<int> Gettf::build_view(void)
 {
-    ;
+    for(int i = 0; i < center_list.size(); i++)
+        cout << center_list[i].name << endl;;
 }
 */
 
@@ -88,6 +96,7 @@ void Gettf::show_viewer(void)
 // getTf member function
 bool Gettf::reset_view(void)
 {
+    center_list.erase(center_list.begin(),center_list.end());
     objects_struct = obj_struct();
     cout << "cleared list" << endl;
 }

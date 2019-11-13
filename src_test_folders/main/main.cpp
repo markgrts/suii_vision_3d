@@ -10,7 +10,7 @@ int main(int argc, char** argv){
     clock_t start;
     double duration;
     bool time_debug = false;
-    bool debug = false;
+    bool debug = true;
 
     start = clock();
     if (time_debug){
@@ -75,6 +75,8 @@ int main(int argc, char** argv){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
         std::cout<<"build object center: "<< duration <<'\n';
     } 
+
+    vector<tf_struct_data> center_list = gettf.build_view(debug);
 
     if (debug){
         gettf.show_viewer();

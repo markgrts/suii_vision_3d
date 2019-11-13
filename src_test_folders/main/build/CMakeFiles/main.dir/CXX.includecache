@@ -37,8 +37,6 @@ iostream
 /home/jeroen/workspace/suii_vision_3d/src_test_folders/main/gettf.h
 iostream
 -
-vector
--
 pipeline.h
 /home/jeroen/workspace/suii_vision_3d/src_test_folders/main/pipeline.h
 vis.h

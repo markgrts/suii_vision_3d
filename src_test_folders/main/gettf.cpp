@@ -67,26 +67,26 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
     }
     
     center_list.push_back(center);
-
-    if (debug)
-    {
-        //cout << "struct : " << center << endl;
-        cout << "name: " << center.name << endl;
-        cout << "center: " << center.center << endl;
-        cout << "x: " << center.x_axis << endl;
-        cout << "y: " << center.y_axis << endl;
-        cout << "z: " << center.z_axis << endl;
-    }
 }
     
-/*
 // getTf member function
-std::list<int> Gettf::build_view(void)
+vector<tf_struct_data> Gettf::build_view(bool debug)
 {
-    for(int i = 0; i < center_list.size(); i++)
-        cout << center_list[i].name << endl;;
+    if (debug)
+    {
+        cout << "list contains: " << endl;
+        for(int i = 0; i < center_list.size(); i++)
+        {
+            cout << "name: " << center_list[i].name << endl;
+            cout << "center: " << center_list[i].center << endl;
+            cout << "x axis: " << center_list[i].x_axis << endl;
+            cout << "y axis: " << center_list[i].y_axis << endl;
+            cout << "z axis: " << center_list[i].z_axis << endl;
+        }
+    }
+    return (center_list);
 }
-*/
+
 
 void Gettf::show_viewer(void)
 {   

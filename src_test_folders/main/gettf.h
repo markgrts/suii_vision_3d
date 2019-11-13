@@ -2,7 +2,6 @@
 #define GET_TF_H
 
 #include <iostream>
-#include <vector>
 #include "pipeline.h"
 #include "vis.h"
 #include "tf.h"
@@ -41,7 +40,7 @@ class Gettf
         pcl::PointCloud<pcl::PointXYZ>::Ptr time_test(void);
         void build_center(string, vector<int>, bool);
         void show_viewer(void);
-        //std::list<int> build_view(void);
+        vector<tf_struct_data> build_view(bool);
         bool reset_view(void);
 };
 

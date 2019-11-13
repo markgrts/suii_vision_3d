@@ -15,16 +15,9 @@ using namespace std;
 class Gettf
 {
     private:
-        //creating PCL variables
-        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud;
-        pcl::PointCloud<pcl::PointXYZ>::Ptr table;
-        pcl::PointCloud<pcl::PointXYZ>::Ptr object;
+        //creating variables
         pcl::visualization::PCLVisualizer::Ptr viewer;
-        //Creating self made variables
         obj_struct objects_struct;
-        tf_struct_data center;
-        tf_struct_data table_tf;
-        tf_struct_data object_tf;
         vector<tf_struct_data> center_list;
         //Creating objects of classes
         Pipeline pipe;
@@ -36,12 +29,12 @@ class Gettf
     public:
         Gettf(bool);
         void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string);
+        void build_center(string, vector<int>, bool);
+        vector<tf_struct_data> build_view(bool);
+        void show_viewer(void);
+        bool reset_view(void);
         //time_test only for testing speed of sending PCD
         pcl::PointCloud<pcl::PointXYZ>::Ptr time_test(void);
-        void build_center(string, vector<int>, bool);
-        void show_viewer(void);
-        vector<tf_struct_data> build_view(bool);
-        bool reset_view(void);
 };
 
 #endif

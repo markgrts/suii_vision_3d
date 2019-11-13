@@ -26,18 +26,13 @@ void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_nam
     objects_struct = segment.getTableSeg(cloud);
 }
 
-pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test(void)
-{
-    //This function is purely for testing the speed of sending a PCD!
-    return(objects_struct.table);
-}
-
 //getTf member function
 void Gettf::build_center(string name, vector<int> roi, bool debug)
 {
+    tf_struct_data center;
     //Need to implement ROI for specific objects and include pt_Filter cut the objects out
     if (name == "table"){
-        table_tf = transform.getTf(objects_struct.table);
+        tf_struct_data table_tf = transform.getTf(objects_struct.table);
         center.name = name;
         center.center = table_tf.center;
         center.x_axis = table_tf.x_axis;
@@ -53,7 +48,7 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
     else{
         //Add pt_filter from ROI
         objects_struct.object = segment.getObjectSeg(objects_struct.object);
-        object_tf = transform.getTf(objects_struct.object);
+        tf_struct_data object_tf = transform.getTf(objects_struct.object);
         center.name = name;
         center.center = object_tf.center;
         center.x_axis = object_tf.x_axis;
@@ -101,6 +96,11 @@ bool Gettf::reset_view(void)
     cout << "cleared list" << endl;
 }
 
+pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test(void)
+{
+    //This function is purely for testing the speed of sending a PCD!
+    return(objects_struct.table);
+}
 
 
 

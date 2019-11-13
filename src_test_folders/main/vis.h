@@ -19,8 +19,7 @@ struct color{
 class Vis
 {
     private:
-        int cloud_count;
-        int tf_count;
+        int cloud_count, tf_count;
         color cloud_color;        
         std::string cloud_name;
         pcl::visualization::PCLVisualizer::Ptr viewer;

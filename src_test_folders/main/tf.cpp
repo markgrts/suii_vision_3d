@@ -42,9 +42,6 @@ tf_struct_data Transformation::getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
     tf_tf_data.y_axis = y_axis;
     tf_tf_data.z_axis = z_axis;
 
-    std::cout << "RETURNED TF" << std::endl;
-    std::cout << "##############################" << std::endl;
-
     return(tf_tf_data);
 }
 

@@ -1,5 +1,5 @@
-#ifndef  TF_STRUCT_H
-#define TF_STRUCT_H
+#ifndef  TF_BR_DATA_H
+#define TF_BR_DATA_H
 
 #include <iostream>
 #include <vector>
@@ -10,13 +10,16 @@
 
 using namespace std;
 
-struct tf_struct_data
+struct tf_br_data
 {
     string name;
-    pcl::PointXYZ center;
-    pcl::PointXYZ x_axis;
-    pcl::PointXYZ y_axis;
-    pcl::PointXYZ z_axis;
+    double pos_x;
+    double pos_y;
+    double pos_z;
+    double quat_x;
+    double quat_y;
+    double quat_z;
+    double quat_w;
 };
 
 #endif

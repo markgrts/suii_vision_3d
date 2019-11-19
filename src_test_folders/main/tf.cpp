@@ -16,11 +16,6 @@ tf_struct_data Transformation::getTf(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
     
     std::vector <float> moment_of_inertia;
     std::vector <float> eccentricity;
-    pcl::PointXYZ min_point_AABB;
-    pcl::PointXYZ max_point_AABB;
-    pcl::PointXYZ min_point_OBB;
-    pcl::PointXYZ max_point_OBB;
-    pcl::PointXYZ position_OBB;
     Eigen::Matrix3f rotational_matrix_OBB;
     float major_value, middle_value, minor_value;
     Eigen::Vector3f major_vector, middle_vector, minor_vector;

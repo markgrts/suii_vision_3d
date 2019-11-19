@@ -38,7 +38,6 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
         center.x_axis = table_tf.x_axis;
         center.y_axis = table_tf.y_axis;
         center.z_axis = table_tf.z_axis;
-        
         if (debug)
         {
             viewer = vis.addCloud(viewer, objects_struct.table);
@@ -61,11 +60,13 @@ void Gettf::build_center(string name, vector<int> roi, bool debug)
         }
     }
     
-    center_list.push_back(center);
+    tf_br_data tf_br = transform_data(center);
+
+    center_list.push_back(tf_br);
 }
     
 // getTf member function
-vector<tf_struct_data> Gettf::build_view(bool debug)
+vector<tf_br_data> Gettf::build_view(bool debug)
 {
     if (debug)
     {
@@ -73,15 +74,15 @@ vector<tf_struct_data> Gettf::build_view(bool debug)
         for(int i = 0; i < center_list.size(); i++)
         {
             cout << "name: " << center_list[i].name << endl;
-            cout << "center: " << center_list[i].center << endl;
-            cout << "x axis: " << center_list[i].x_axis << endl;
-            cout << "y axis: " << center_list[i].y_axis << endl;
-            cout << "z axis: " << center_list[i].z_axis << endl;
+            cout << "pos_x: " << center_list[i].pos_x << endl;
+            cout << "pos_y: " << center_list[i].pos_y << endl;
+            cout << "pos_z: " << center_list[i].pos_z << endl;
+            cout << "quat_z: " << center_list[i].quat_z << endl;
+            cout << "quat_w: " << center_list[i].quat_w << endl;
         }
     }
     return (center_list);
 }
-
 
 void Gettf::show_viewer(void)
 {   
@@ -102,5 +103,43 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr Gettf::time_test(void)
     return(objects_struct.table);
 }
 
+tf_br_data Gettf::transform_data(tf_struct_data center_result)
+{
+    tf_br_data tf_br;
+    tf_br.name = center_result.name;
+    tf_br.pos_x = center_result.center.x;
+    tf_br.pos_y = center_result.center.y;
+    tf_br.pos_z = center_result.center.z;
+    
+    double yaw = atan2((center_result.x_axis.y - center_result.center.y),(center_result.x_axis.x - center_result.center.x));
+    if ((center_result.x_axis.y - center_result.center.y) > 0 && (center_result.x_axis.x - center_result.center.x) < 0)
+    {
+        yaw = yaw + PI;
+    }
+    else if ((center_result.x_axis.y - center_result.center.y) < 0 && (center_result.x_axis.x - center_result.center.x) < 0)
+    {
+        yaw = yaw + PI;
+    }
+    else if ((center_result.x_axis.y - center_result.center.y) < 0 && (center_result.x_axis.x - center_result.center.x) > 0)
+    {
+        yaw = yaw + PI;
+    }
+
+    double pitch = 0.0;
+    double roll = 0.0;
+    double cy = cos(yaw * 0.5);
+    double sy = sin(yaw * 0.5);
+    double cp = cos(pitch * 0.5);
+    double sp = sin(pitch * 0.5);
+    double cr = cos(roll * 0.5);
+    double sr = sin(roll * 0.5);
+    
+    tf_br.quat_x = 0.0;
+    tf_br.quat_y = 0.0;
+    tf_br.quat_z = sy * cp * cr - cy * sp * sr;
+    tf_br.quat_w = cy * cp * cr + sy * sp * sr;
+
+    return tf_br;
+}
 
 

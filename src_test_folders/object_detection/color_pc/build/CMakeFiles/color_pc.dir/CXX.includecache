@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_2.cpp
+/home/mark/workspaces/suii_vision_3d/src_test_folders/object_detection/color_pc/color_pc_3.cpp
 librealsense2/rs.hpp
 -
 pcl/io/pcd_io.h

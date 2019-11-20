@@ -123,32 +123,32 @@ color_pc/fast:
 	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/build
 .PHONY : color_pc/fast
 
-color_pc_2.o: color_pc_2.cpp.o
+color_pc_3.o: color_pc_3.cpp.o
 
-.PHONY : color_pc_2.o
+.PHONY : color_pc_3.o
 
 # target to build an object file
-color_pc_2.cpp.o:
-	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_2.cpp.o
-.PHONY : color_pc_2.cpp.o
+color_pc_3.cpp.o:
+	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_3.cpp.o
+.PHONY : color_pc_3.cpp.o
 
-color_pc_2.i: color_pc_2.cpp.i
+color_pc_3.i: color_pc_3.cpp.i
 
-.PHONY : color_pc_2.i
+.PHONY : color_pc_3.i
 
 # target to preprocess a source file
-color_pc_2.cpp.i:
-	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_2.cpp.i
-.PHONY : color_pc_2.cpp.i
+color_pc_3.cpp.i:
+	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_3.cpp.i
+.PHONY : color_pc_3.cpp.i
 
-color_pc_2.s: color_pc_2.cpp.s
+color_pc_3.s: color_pc_3.cpp.s
 
-.PHONY : color_pc_2.s
+.PHONY : color_pc_3.s
 
 # target to generate assembly for a file
-color_pc_2.cpp.s:
-	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_2.cpp.s
-.PHONY : color_pc_2.cpp.s
+color_pc_3.cpp.s:
+	$(MAKE) -f CMakeFiles/color_pc.dir/build.make CMakeFiles/color_pc.dir/color_pc_3.cpp.s
+.PHONY : color_pc_3.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... color_pc"
 	@echo "... edit_cache"
-	@echo "... color_pc_2.o"
-	@echo "... color_pc_2.i"
-	@echo "... color_pc_2.s"
+	@echo "... color_pc_3.o"
+	@echo "... color_pc_3.i"
+	@echo "... color_pc_3.s"
 .PHONY : help
 
 

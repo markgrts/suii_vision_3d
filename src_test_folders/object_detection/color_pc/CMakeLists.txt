@@ -12,7 +12,7 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable(${PROJECT_NAME} color_pc_2.cpp)
+add_executable(${PROJECT_NAME} color_pc_3.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${realsense2_LIBRARY})
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} )

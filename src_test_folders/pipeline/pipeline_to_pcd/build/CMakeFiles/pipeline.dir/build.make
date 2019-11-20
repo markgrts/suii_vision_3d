@@ -90,7 +90,7 @@ pipeline_EXTERNAL_OBJECTS =
 
 pipeline: CMakeFiles/pipeline.dir/pipeline.cpp.o
 pipeline: CMakeFiles/pipeline.dir/build.make
-pipeline: /usr/local/lib/librealsense2.so.2.28.0
+pipeline: /usr/local/lib/librealsense2.so.2.29.0
 pipeline: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
 pipeline: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
 pipeline: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0

@@ -547,6 +547,12 @@ pipeline_BINARY_DIR:STATIC=/home/mark/workspaces/suii_vision_3d/src_test_folders
 //Value Computed by CMake
 pipeline_SOURCE_DIR:STATIC=/home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/pipeline_to_pcd
 
+//The directory containing a CMake configuration file for realsense2-2.29.0.
+realsense2-2.29.0_DIR:PATH=realsense2-2.29.0_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for realsense2.29.0.
+realsense2.29.0_DIR:PATH=realsense2.29.0_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for realsense2.
 realsense2_DIR:PATH=/usr/local/lib/cmake/realsense2
 

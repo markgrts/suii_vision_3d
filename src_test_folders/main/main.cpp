@@ -76,7 +76,7 @@ int main(int argc, char** argv){
         std::cout<<"build object center: "<< duration <<'\n';
     } 
 
-    vector<tf_struct_data> center_list = gettf.build_view(debug);
+    vector<tf_br_data> center_list = gettf.build_view(debug);
 
     if (debug){
         gettf.show_viewer();

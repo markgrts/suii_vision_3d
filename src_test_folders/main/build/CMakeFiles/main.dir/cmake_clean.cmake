@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/segmentation.cpp.o"
   "CMakeFiles/main.dir/tf.cpp.o"
   "CMakeFiles/main.dir/vis.cpp.o"
+  "CMakeFiles/main.dir/getImages.cpp.o"
   "main.pdb"
   "main"
 )

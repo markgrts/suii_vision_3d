@@ -1,5 +1,6 @@
 #include "gettf.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -17,8 +18,6 @@ Gettf::Gettf(bool debug)
 
 void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_name)
 {
-    //Get PCD from Pipeline.cpp
-    cloud = pipe.getCloud(cloud_name);
     //Filter cloud
     cloud = filter.pt_Filter(cloud);
     cloud = filter.d_Filter(cloud);
@@ -79,6 +78,22 @@ vector<tf_br_data> Gettf::build_view(bool debug)
             cout << "pos_z: " << center_list[i].pos_z << endl;
             cout << "quat_z: " << center_list[i].quat_z << endl;
             cout << "quat_w: " << center_list[i].quat_w << endl;
+
+            if(center_list[i].name == "object")
+            {
+                string filename = "test.csv";
+                fstream fin;
+                fin.open(filename, ios::out | ios::app);
+                fin.seekg(ios_base::end);
+                fin << center_list[i].name << ", " << 
+                center_list[i].pos_x << ", " << 
+                center_list[i].pos_y << ", " <<
+                center_list[i].pos_z << ", " <<
+                center_list[i].quat_z << ", " <<
+                center_list[i].quat_w << "\n";
+                fin.close();  
+            }
+            
         }
     }
     return (center_list);

@@ -43,6 +43,8 @@ pcl/io/pcd_io.h
 -
 pcl/point_types.h
 -
+opencv2/opencv.hpp
+-
 
 /home/mark/workspaces/suii_vision_3d/src_test_folders/pipeline/ros_pipeline/pipeline.cpp
 pipeline.h

@@ -1,5 +1,7 @@
 #include "pipeline.h"
 
+using namespace cv;
+
 // Pipeline constructor
 Pipeline::Pipeline()
 {
@@ -54,7 +56,8 @@ img_struct Pipeline::getFrames(void)
 	rs2::frame color = frames.get_color_frame();
 
     //write colordata in struct
-    imgs_data.Image = color;
+    Mat image(Size(640, 480), CV_8UC3, (void*)color.get_data(), Mat::AUTO_STEP);
+    imgs_data.Image = image;
 
     pc.map_to(color);
 	points = pc.calculate(depth);

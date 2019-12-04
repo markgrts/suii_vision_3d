@@ -11,10 +11,10 @@ using namespace std;
 int main(){
     GetImages getimage;
     img_struct images = getimage.GetPic();
-    rs2::frame color_frame = images.Image;
+    cv::Mat color = images.Image;
 
     //show rgb image
-    Mat color(Size(640, 480), CV_8UC3, (void*)color_frame.get_data(), Mat::AUTO_STEP);
+    //Mat color(Size(640, 480), CV_8UC3, (void*)color_frame.get_data(), Mat::AUTO_STEP);
     namedWindow("Display Image", WINDOW_AUTOSIZE );
     imshow("Display Image", color);
     waitKey(0);

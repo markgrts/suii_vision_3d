@@ -1,6 +1,7 @@
 #include <iostream>
 #include "tf_struct.h"
 #include "gettf.h"
+#include "getImages.h"
 
 using namespace std;
 pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
@@ -18,15 +19,7 @@ int main(int argc, char** argv){
         std::cout<<"starting time: "<< duration <<'\n';
     }
     
-    file_name = argv[1];
-    cout << "##############################" << endl;
-    cout << "MAIN \n"  << "file_name: " << argv[1] << endl;
-    cout << "##############################" << endl;
-
-    if (argc != 2){
-        cout << "Add input_file.pcd" << endl;
-        return (0);
-    }        
+    file_name = "obj";
     
     if (time_debug){
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
@@ -35,6 +28,9 @@ int main(int argc, char** argv){
 
     //get PCD
     Gettf gettf(debug);
+    GetImages getimage;
+    img_struct images = getimage.GetPic();
+    cloud = images.Cloud;
     gettf.send_pcd(cloud, file_name);
 
     if (time_debug){

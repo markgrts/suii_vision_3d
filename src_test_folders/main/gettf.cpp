@@ -130,7 +130,7 @@ tf_br_data Gettf::transform_data(tf_struct_data center_result)
         yaw = 2*PI + yaw;
     }
 
-    //Write data in .csv file (Table, Table_z, Object, Pos_x, Pos_y, Pos_z, Angle (º))
+    //Write data in test.csv file (Table, Table_z, Object, Pos_x, Pos_y, Pos_z, Angle (º))
     if(center_result.name == "table")
     {
         string filename = "test.csv";

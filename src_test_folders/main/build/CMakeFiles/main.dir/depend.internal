@@ -241,9 +241,12 @@ CMakeFiles/main.dir/filter.cpp.o
  /usr/include/pcl-1.8/pcl/common/impl/copy_point.hpp
  /usr/include/pcl-1.8/pcl/common/impl/eigen.hpp
  /usr/include/pcl-1.8/pcl/common/impl/io.hpp
+ /usr/include/pcl-1.8/pcl/common/impl/projection_matrix.hpp
  /usr/include/pcl-1.8/pcl/common/impl/transforms.hpp
  /usr/include/pcl-1.8/pcl/common/io.h
  /usr/include/pcl-1.8/pcl/common/point_tests.h
+ /usr/include/pcl-1.8/pcl/common/projection_matrix.h
+ /usr/include/pcl-1.8/pcl/common/time.h
  /usr/include/pcl-1.8/pcl/common/transforms.h
  /usr/include/pcl-1.8/pcl/console/print.h
  /usr/include/pcl-1.8/pcl/conversions.h
@@ -257,12 +260,15 @@ CMakeFiles/main.dir/filter.cpp.o
  /usr/include/pcl-1.8/pcl/filters/impl/filter.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/filter_indices.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/passthrough.hpp
+ /usr/include/pcl-1.8/pcl/filters/impl/statistical_outlier_removal.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/voxel_grid.hpp
  /usr/include/pcl-1.8/pcl/filters/passthrough.h
+ /usr/include/pcl-1.8/pcl/filters/statistical_outlier_removal.h
  /usr/include/pcl-1.8/pcl/filters/voxel_grid.h
  /usr/include/pcl-1.8/pcl/for_each_type.h
  /usr/include/pcl-1.8/pcl/geometry/planar_polygon.h
  /usr/include/pcl-1.8/pcl/impl/cloud_iterator.hpp
+ /usr/include/pcl-1.8/pcl/impl/instantiate.hpp
  /usr/include/pcl-1.8/pcl/impl/pcl_base.hpp
  /usr/include/pcl-1.8/pcl/impl/point_types.hpp
  /usr/include/pcl-1.8/pcl/io/boost.h
@@ -271,14 +277,38 @@ CMakeFiles/main.dir/filter.cpp.o
  /usr/include/pcl-1.8/pcl/io/io.h
  /usr/include/pcl-1.8/pcl/io/lzf.h
  /usr/include/pcl-1.8/pcl/io/pcd_io.h
+ /usr/include/pcl-1.8/pcl/kdtree/flann.h
+ /usr/include/pcl-1.8/pcl/kdtree/impl/kdtree_flann.hpp
+ /usr/include/pcl-1.8/pcl/kdtree/kdtree.h
+ /usr/include/pcl-1.8/pcl/kdtree/kdtree_flann.h
+ /usr/include/pcl-1.8/pcl/octree/impl/octree_base.hpp
+ /usr/include/pcl-1.8/pcl/octree/impl/octree_iterator.hpp
+ /usr/include/pcl-1.8/pcl/octree/impl/octree_pointcloud.hpp
+ /usr/include/pcl-1.8/pcl/octree/impl/octree_search.hpp
+ /usr/include/pcl-1.8/pcl/octree/octree_base.h
+ /usr/include/pcl-1.8/pcl/octree/octree_container.h
+ /usr/include/pcl-1.8/pcl/octree/octree_iterator.h
+ /usr/include/pcl-1.8/pcl/octree/octree_key.h
+ /usr/include/pcl-1.8/pcl/octree/octree_nodes.h
+ /usr/include/pcl-1.8/pcl/octree/octree_pointcloud.h
+ /usr/include/pcl-1.8/pcl/octree/octree_search.h
  /usr/include/pcl-1.8/pcl/pcl_base.h
  /usr/include/pcl-1.8/pcl/pcl_config.h
  /usr/include/pcl-1.8/pcl/pcl_exports.h
  /usr/include/pcl-1.8/pcl/pcl_macros.h
  /usr/include/pcl-1.8/pcl/point_cloud.h
+ /usr/include/pcl-1.8/pcl/point_representation.h
  /usr/include/pcl-1.8/pcl/point_traits.h
  /usr/include/pcl-1.8/pcl/point_types.h
  /usr/include/pcl-1.8/pcl/register_point_struct.h
+ /usr/include/pcl-1.8/pcl/search/impl/kdtree.hpp
+ /usr/include/pcl-1.8/pcl/search/impl/organized.hpp
+ /usr/include/pcl-1.8/pcl/search/impl/search.hpp
+ /usr/include/pcl-1.8/pcl/search/kdtree.h
+ /usr/include/pcl-1.8/pcl/search/octree.h
+ /usr/include/pcl-1.8/pcl/search/organized.h
+ /usr/include/pcl-1.8/pcl/search/pcl_search.h
+ /usr/include/pcl-1.8/pcl/search/search.h
  /usr/include/pcl-1.8/pcl/visualization/area_picking_event.h
  /usr/include/pcl-1.8/pcl/visualization/boost.h
  /usr/include/pcl-1.8/pcl/visualization/common/actor_map.h
@@ -440,6 +470,27 @@ CMakeFiles/main.dir/filter.cpp.o
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/sys/mman.h
+ /usr/local/include/librealsense2/h/rs_config.h
+ /usr/local/include/librealsense2/h/rs_context.h
+ /usr/local/include/librealsense2/h/rs_device.h
+ /usr/local/include/librealsense2/h/rs_frame.h
+ /usr/local/include/librealsense2/h/rs_option.h
+ /usr/local/include/librealsense2/h/rs_pipeline.h
+ /usr/local/include/librealsense2/h/rs_processing.h
+ /usr/local/include/librealsense2/h/rs_record_playback.h
+ /usr/local/include/librealsense2/h/rs_sensor.h
+ /usr/local/include/librealsense2/h/rs_types.h
+ /usr/local/include/librealsense2/hpp/rs_context.hpp
+ /usr/local/include/librealsense2/hpp/rs_device.hpp
+ /usr/local/include/librealsense2/hpp/rs_frame.hpp
+ /usr/local/include/librealsense2/hpp/rs_options.hpp
+ /usr/local/include/librealsense2/hpp/rs_pipeline.hpp
+ /usr/local/include/librealsense2/hpp/rs_processing.hpp
+ /usr/local/include/librealsense2/hpp/rs_record_playback.hpp
+ /usr/local/include/librealsense2/hpp/rs_sensor.hpp
+ /usr/local/include/librealsense2/hpp/rs_types.hpp
+ /usr/local/include/librealsense2/rs.h
+ /usr/local/include/librealsense2/rs.hpp
 CMakeFiles/main.dir/getImages.cpp.o
  /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.cpp
  /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.h
@@ -1310,8 +1361,10 @@ CMakeFiles/main.dir/gettf.cpp.o
  /usr/include/pcl-1.8/pcl/filters/impl/filter.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/filter_indices.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/passthrough.hpp
+ /usr/include/pcl-1.8/pcl/filters/impl/statistical_outlier_removal.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/voxel_grid.hpp
  /usr/include/pcl-1.8/pcl/filters/passthrough.h
+ /usr/include/pcl-1.8/pcl/filters/statistical_outlier_removal.h
  /usr/include/pcl-1.8/pcl/filters/voxel_grid.h
  /usr/include/pcl-1.8/pcl/for_each_type.h
  /usr/include/pcl-1.8/pcl/geometry/planar_polygon.h
@@ -1571,6 +1624,27 @@ CMakeFiles/main.dir/gettf.cpp.o
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/sys/mman.h
+ /usr/local/include/librealsense2/h/rs_config.h
+ /usr/local/include/librealsense2/h/rs_context.h
+ /usr/local/include/librealsense2/h/rs_device.h
+ /usr/local/include/librealsense2/h/rs_frame.h
+ /usr/local/include/librealsense2/h/rs_option.h
+ /usr/local/include/librealsense2/h/rs_pipeline.h
+ /usr/local/include/librealsense2/h/rs_processing.h
+ /usr/local/include/librealsense2/h/rs_record_playback.h
+ /usr/local/include/librealsense2/h/rs_sensor.h
+ /usr/local/include/librealsense2/h/rs_types.h
+ /usr/local/include/librealsense2/hpp/rs_context.hpp
+ /usr/local/include/librealsense2/hpp/rs_device.hpp
+ /usr/local/include/librealsense2/hpp/rs_frame.hpp
+ /usr/local/include/librealsense2/hpp/rs_options.hpp
+ /usr/local/include/librealsense2/hpp/rs_pipeline.hpp
+ /usr/local/include/librealsense2/hpp/rs_processing.hpp
+ /usr/local/include/librealsense2/hpp/rs_record_playback.hpp
+ /usr/local/include/librealsense2/hpp/rs_sensor.hpp
+ /usr/local/include/librealsense2/hpp/rs_types.hpp
+ /usr/local/include/librealsense2/rs.h
+ /usr/local/include/librealsense2/rs.hpp
 CMakeFiles/main.dir/main.cpp.o
  /home/mark/workspaces/suii_vision_3d/src_test_folders/main/filter.h
  /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.h
@@ -1864,8 +1938,10 @@ CMakeFiles/main.dir/main.cpp.o
  /usr/include/pcl-1.8/pcl/filters/impl/filter.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/filter_indices.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/passthrough.hpp
+ /usr/include/pcl-1.8/pcl/filters/impl/statistical_outlier_removal.hpp
  /usr/include/pcl-1.8/pcl/filters/impl/voxel_grid.hpp
  /usr/include/pcl-1.8/pcl/filters/passthrough.h
+ /usr/include/pcl-1.8/pcl/filters/statistical_outlier_removal.h
  /usr/include/pcl-1.8/pcl/filters/voxel_grid.h
  /usr/include/pcl-1.8/pcl/for_each_type.h
  /usr/include/pcl-1.8/pcl/geometry/planar_polygon.h

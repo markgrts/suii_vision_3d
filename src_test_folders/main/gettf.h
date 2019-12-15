@@ -30,6 +30,12 @@ class Gettf
         Vis vis;
         tf_br_data transform_data(tf_struct_data center_result);
 
+        //For test cut_Function
+        int xmin = 0;
+        int xmax = 640;
+        int ymin = 200;
+        int ymax = 480;
+
     public:
         Gettf(bool);
         void send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr, string);

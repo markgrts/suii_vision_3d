@@ -25,7 +25,11 @@ pcl/filters/crop_box.h
 -
 pcl/filters/voxel_grid.h
 -
+pcl/filters/statistical_outlier_removal.h
+-
 pcl/point_types.h
+-
+librealsense2/rs.hpp
 -
 
 /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.cpp
@@ -1844,6 +1848,12 @@ pcl/filters/passthrough.h
 pcl/common/io.h
 -
 
+/usr/include/pcl-1.8/pcl/filters/impl/statistical_outlier_removal.hpp
+pcl/filters/statistical_outlier_removal.h
+-
+pcl/common/io.h
+-
+
 /usr/include/pcl-1.8/pcl/filters/impl/voxel_grid.hpp
 pcl/common/centroid.h
 -
@@ -1858,6 +1868,14 @@ pcl/filters/voxel_grid.h
 pcl/filters/filter_indices.h
 -
 pcl/filters/impl/passthrough.hpp
+-
+
+/usr/include/pcl-1.8/pcl/filters/statistical_outlier_removal.h
+pcl/filters/filter_indices.h
+-
+pcl/search/pcl_search.h
+-
+pcl/filters/impl/statistical_outlier_removal.hpp
 -
 
 /usr/include/pcl-1.8/pcl/filters/voxel_grid.h

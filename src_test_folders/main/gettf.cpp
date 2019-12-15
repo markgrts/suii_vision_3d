@@ -20,6 +20,7 @@ void Gettf::send_pcd(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, string cloud_nam
 {
     //Filter cloud
     cloud = filter.pt_Filter(cloud);
+    //cloud = filter.cut_Filter(cloud, xmin, xmax, ymin, ymax);
     cloud = filter.d_Filter(cloud);
     //Segment.getTableSeg gets table segmentation and cuts it out of the PCD. It will retrun the table PCD and a PCD containing everything else
     objects_struct = segment.getTableSeg(cloud);

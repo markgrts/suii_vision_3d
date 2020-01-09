@@ -7,12 +7,13 @@ This map contains all filter tests. For filtering the 3D point cloud made with t
 Getting started, prerequisites and how to install can be found in the [README](https://github.com/markgrts/suii_vision_3d/blob/master/README.md).
 
 ## Running the tests
+Every test uses a .pcd file to run. Some examples can be found in the [Pictures](https://github.com/markgrts/suii_vision_3d/tree/master/pictures).
 
-### Downsampling
+### filters_downsampling
 Steps to run the test:
-
 * Remove the build folder with all its content.
 * Create new build folder
+* Add a PCD file to the build folder
 * cd into build directory
 * Run the next lines:
 ```
@@ -21,9 +22,32 @@ make
 ./down_sampling <pcd_name>.pcd
 ```
 
-### Outlierremoval
+### filters_outlierremoval
+Steps to run the test:
+* Remove the build folder with all its content.
+* Create new build folder
+* Add a PCD file to the build folder
+* cd into build directory
+* Run the next lines:
+```
+cmake ..
+make
+./outlier_removal <pcd_name>.pcd
+```
 
-### Passthrough
+### filters_passthrough
+Steps to run the test:
+
+* Remove the build folder with all its content.
+* Create new build folder
+* Add a PCD file to the build folder
+* cd into build directory
+* Run the next lines:
+```
+cmake ..
+make
+./pt_filter <pcd_name>.pcd
+```
 
 ## Authors
 

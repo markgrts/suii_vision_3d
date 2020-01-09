@@ -31,7 +31,7 @@ NOTE: these files are stand alone C++ codes and are not ROS related.
 After installation is done we can start running the tests. All tests can be found in the [src_test_folders](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders) map.
 More info about running those tests can be found in the README of every test.
 
-List of tests:
+List of tests:  
 [filters](https://github.com/markgrts/suii_vision_3d/master/src_test_folders/filters)  
 [object_detection](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/object_detection)  
 [pipeline](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/pipeline)  

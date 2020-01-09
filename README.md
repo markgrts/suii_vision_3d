@@ -32,7 +32,7 @@ After installation is done we can start running the tests. All tests can be foun
 More info about running those tests can be found in the README of every test.
 
 List of tests:  
-[filters](https://github.com/markgrts/suii_vision_3d/master/src_test_folders/filters)  
+[filters](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/filters)  
 [object_detection](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/object_detection)  
 [pipeline](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/pipeline)  
 [segmentation](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/segmentation)  

@@ -90,7 +90,7 @@ color_pc_EXTERNAL_OBJECTS =
 
 color_pc: CMakeFiles/color_pc.dir/color_pc_3.cpp.o
 color_pc: CMakeFiles/color_pc.dir/build.make
-color_pc: /usr/local/lib/librealsense2.so.2.28.0
+color_pc: /usr/local/lib/librealsense2.so.2.29.0
 color_pc: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
 color_pc: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
 color_pc: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0

@@ -209,6 +209,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/realsense2/realsense2Config.cmake"
   "/usr/local/lib/cmake/realsense2/realsense2ConfigVersion.cmake"
   "/usr/local/lib/cmake/realsense2/realsense2Targets-noconfig.cmake"
+  "/usr/local/lib/cmake/realsense2/realsense2Targets-release.cmake"
   "/usr/local/lib/cmake/realsense2/realsense2Targets.cmake"
   "/usr/share/OpenCV/OpenCVConfig-version.cmake"
   "/usr/share/OpenCV/OpenCVConfig.cmake"

@@ -33,10 +33,15 @@ More info about running those tests can be found in the README of every test.
 
 List of tests:
 [filters](https://github.com/markgrts/suii_vision_3d/master/src_test_folders/filters)
+
 [object_detection](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/object_detection)
+
 [pipeline](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/pipeline)
+
 [segmentation](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/segmentation)
+
 [tf](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/tf)
+
 [visualization](https://github.com/markgrts/suii_vision_3d/tree/master/src_test_folders/visualization)
 
 ## Authors

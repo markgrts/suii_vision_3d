@@ -35,3 +35,17 @@ cmake ..
 make
 ./pipeline <save_pcd_name>.pcd
 ```
+
+### ros_pipeline
+This test grabs a pointcloud and RGB frame and shows them.
+
+Steps to run the test:
+* Remove the build folder with all its content.
+* Create new build folder
+* cd into build directory
+* Run the next lines:
+```
+cmake ..
+make
+./getImages
+```

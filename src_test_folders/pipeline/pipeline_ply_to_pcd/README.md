@@ -35,14 +35,3 @@ cmake ..
 make
 ./pipeline <save_pcd_name>.pcd
 ```
-
-## Authors
-
-* **Jeroen Bongers** - *Initial work* - [JeroenBongers96](https://github.com/JeroenBongers96)
-* **Mark Geraets** - *Initial work* - [markgrts](https://github.com/markgrts)
-
-In name of [RoboHub Eindhoven](https://robohub-eindhoven.nl/)
-
-## License
-
-This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](LICENSE.md) file for details

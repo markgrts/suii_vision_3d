@@ -58,14 +58,3 @@ make
 ```
 Tutorial followed: [PCL passthrough](http://pointclouds.org/documentation/tutorials/passthrough.php#passthrough)
 NOTE: tutorial uses Passthrough filter, our test uses BoxFilter
-
-## Authors
-
-* **Jeroen Bongers** - *Initial work* - [JeroenBongers96](https://github.com/JeroenBongers96)
-* **Mark Geraets** - *Initial work* - [markgrts](https://github.com/markgrts)
-
-In name of [RoboHub Eindhoven](https://robohub-eindhoven.nl/)
-
-## License
-
-This project is licensed under the BSD 3-Clause License - see the [LICENSE.md](LICENSE.md) file for details

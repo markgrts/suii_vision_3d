@@ -21,6 +21,7 @@ cmake ..
 make
 ./down_sampling <pcd_name>.pcd
 ```
+Tutorial followed: [PCL passthrough](http://pointclouds.org/documentation/tutorials/voxel_grid.php#voxelgrid)
 
 ### filters_outlierremoval
 Steps to run the test:
@@ -34,6 +35,7 @@ cmake ..
 make
 ./outlier_removal <pcd_name>.pcd
 ```
+Tutorial followed: [PCL passthrough](http://pointclouds.org/documentation/tutorials/statistical_outlier.php#statistical-outlier-removal)
 
 ### filters_passthrough
 Steps to run the test:
@@ -48,6 +50,8 @@ cmake ..
 make
 ./pt_filter <pcd_name>.pcd
 ```
+Tutorial followed: [PCL passthrough](http://pointclouds.org/documentation/tutorials/passthrough.php#passthrough)
+NOTE: tutorial uses Passthrough filter, our test uses BoxFilter
 
 ## Authors
 

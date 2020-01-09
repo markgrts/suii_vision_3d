@@ -7,9 +7,11 @@ This map contains all filter tests. For filtering the 3D point cloud made with t
 Getting started, prerequisites and how to install can be found in the [README](https://github.com/markgrts/suii_vision_3d/blob/master/README.md).
 
 ## Running the tests
-Every test uses a .pcd file to run. Some examples can be found in the [Pictures](https://github.com/markgrts/suii_vision_3d/tree/master/pictures).
+Some test uses a .pcd file to run. Some PCD examples can be found in the [Pictures](https://github.com/markgrts/suii_vision_3d/tree/master/pictures) folder.
 
 ### filters_downsampling
+This test reduces the amount of point with a voxel grid filter from a given PCD.
+
 Steps to run the test:
 * Remove the build folder with all its content.
 * Create new build folder
@@ -24,6 +26,8 @@ make
 Tutorial followed: [PCL passthrough](http://pointclouds.org/documentation/tutorials/voxel_grid.php#voxelgrid)
 
 ### filters_outlierremoval
+This test removes outliers from a given PCD file.
+
 Steps to run the test:
 * Remove the build folder with all its content.
 * Create new build folder
@@ -38,6 +42,8 @@ make
 Tutorial followed: [PCL passthrough](http://pointclouds.org/documentation/tutorials/statistical_outlier.php#statistical-outlier-removal)
 
 ### filters_passthrough
+This test removes the borders of a given PCD file.
+
 Steps to run the test:
 
 * Remove the build folder with all its content.

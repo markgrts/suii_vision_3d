@@ -8,5 +8,5 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable (cluster_extraction cluster_extraction_v4.cpp)
+add_executable (cluster_extraction cluster_extraction.cpp)
 target_link_libraries (cluster_extraction ${PCL_LIBRARIES})

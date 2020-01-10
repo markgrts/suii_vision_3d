@@ -1,6 +1,6 @@
 # Filter tests
 
-This map contains all filter tests. For filtering the 3D point cloud made with the Creative BlasterX Senz3D.
+This map contains all filter tests for filtering the 3D point cloud made with the Creative BlasterX Senz3D.
 
 ## Getting Started
 

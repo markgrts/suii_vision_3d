@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction
+CMAKE_SOURCE_DIR = /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build
+CMAKE_BINARY_DIR = /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cluster_extraction.dir/depend.make
@@ -57,38 +57,38 @@ include CMakeFiles/cluster_extraction.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cluster_extraction.dir/flags.make
 
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o: CMakeFiles/cluster_extraction.dir/flags.make
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o: ../cluster_extraction_v4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o -c /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction_v4.cpp
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o: CMakeFiles/cluster_extraction.dir/flags.make
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o: ../cluster_extraction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction.cpp
 
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction_v4.cpp > CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.i
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction.cpp > CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.i
 
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction_v4.cpp -o CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.s
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/cluster_extraction.cpp -o CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.s
 
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.requires:
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.requires:
 
-.PHONY : CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.requires
+.PHONY : CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.requires
 
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.provides: CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.provides.build
-.PHONY : CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.provides
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.provides: CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.provides.build
+.PHONY : CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.provides
 
-CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.provides.build: CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o
+CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.provides.build: CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o
 
 
 # Object files for target cluster_extraction
 cluster_extraction_OBJECTS = \
-"CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o"
+"CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o"
 
 # External object files for target cluster_extraction
 cluster_extraction_EXTERNAL_OBJECTS =
 
-cluster_extraction: CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o
+cluster_extraction: CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o
 cluster_extraction: CMakeFiles/cluster_extraction.dir/build.make
 cluster_extraction: /usr/lib/x86_64-linux-gnu/libboost_system.so
 cluster_extraction: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -364,7 +364,7 @@ cluster_extraction: /usr/lib/x86_64-linux-gnu/libvtksys-6.3.so.6.3.0
 cluster_extraction: /usr/lib/x86_64-linux-gnu/libproj.so
 cluster_extraction: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
 cluster_extraction: CMakeFiles/cluster_extraction.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cluster_extraction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cluster_extraction"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cluster_extraction.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -372,7 +372,7 @@ CMakeFiles/cluster_extraction.dir/build: cluster_extraction
 
 .PHONY : CMakeFiles/cluster_extraction.dir/build
 
-CMakeFiles/cluster_extraction.dir/requires: CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o.requires
+CMakeFiles/cluster_extraction.dir/requires: CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o.requires
 
 .PHONY : CMakeFiles/cluster_extraction.dir/requires
 
@@ -381,6 +381,6 @@ CMakeFiles/cluster_extraction.dir/clean:
 .PHONY : CMakeFiles/cluster_extraction.dir/clean
 
 CMakeFiles/cluster_extraction.dir/depend:
-	cd /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles/cluster_extraction.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles/cluster_extraction.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cluster_extraction.dir/depend
 

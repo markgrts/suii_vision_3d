@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction
+CMAKE_SOURCE_DIR = /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build
+CMAKE_BINARY_DIR = /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeroen/workspaces/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeroen/workspace/suii_vision_3d/src_test_folders/segmentation/segmentation_euclidean_cluster_extraction/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ cluster_extraction/fast:
 	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/build
 .PHONY : cluster_extraction/fast
 
-cluster_extraction_v4.o: cluster_extraction_v4.cpp.o
+cluster_extraction.o: cluster_extraction.cpp.o
 
-.PHONY : cluster_extraction_v4.o
+.PHONY : cluster_extraction.o
 
 # target to build an object file
-cluster_extraction_v4.cpp.o:
-	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.o
-.PHONY : cluster_extraction_v4.cpp.o
+cluster_extraction.cpp.o:
+	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.o
+.PHONY : cluster_extraction.cpp.o
 
-cluster_extraction_v4.i: cluster_extraction_v4.cpp.i
+cluster_extraction.i: cluster_extraction.cpp.i
 
-.PHONY : cluster_extraction_v4.i
+.PHONY : cluster_extraction.i
 
 # target to preprocess a source file
-cluster_extraction_v4.cpp.i:
-	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.i
-.PHONY : cluster_extraction_v4.cpp.i
+cluster_extraction.cpp.i:
+	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.i
+.PHONY : cluster_extraction.cpp.i
 
-cluster_extraction_v4.s: cluster_extraction_v4.cpp.s
+cluster_extraction.s: cluster_extraction.cpp.s
 
-.PHONY : cluster_extraction_v4.s
+.PHONY : cluster_extraction.s
 
 # target to generate assembly for a file
-cluster_extraction_v4.cpp.s:
-	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction_v4.cpp.s
-.PHONY : cluster_extraction_v4.cpp.s
+cluster_extraction.cpp.s:
+	$(MAKE) -f CMakeFiles/cluster_extraction.dir/build.make CMakeFiles/cluster_extraction.dir/cluster_extraction.cpp.s
+.PHONY : cluster_extraction.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cluster_extraction"
 	@echo "... edit_cache"
-	@echo "... cluster_extraction_v4.o"
-	@echo "... cluster_extraction_v4.i"
-	@echo "... cluster_extraction_v4.s"
+	@echo "... cluster_extraction.o"
+	@echo "... cluster_extraction.i"
+	@echo "... cluster_extraction.s"
 .PHONY : help
 
 

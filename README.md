@@ -21,10 +21,8 @@ To install the suii_vision_3d package in your workspace, you will need to run th
 
 ```
 git clone https://github.com/markgrts/suii_vision_3d.git
-cmake ..
-make
 ``` 
-NOTE: these files are stand alone C++ codes and are not ROS related.
+NOTE: these files are stand alone C++ codes and are not ROS related, meaning it doesn't have to be in a catkin_ws.
 
 ## Running the tests
 

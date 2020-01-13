@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mark/workspaces/suii_vision_3d/src_test_folders/main
+CMAKE_SOURCE_DIR = /home/jeroen/workspace/suii_vision_3d/src/main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mark/workspaces/suii_vision_3d/src_test_folders/main/build
+CMAKE_BINARY_DIR = /home/jeroen/workspace/suii_vision_3d/src/main/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/main.dir/main.cpp.o.provides.build: CMakeFiles/main.dir/main.cpp.o
 
 CMakeFiles/main.dir/gettf.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/gettf.cpp.o: ../gettf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/gettf.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gettf.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/gettf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/gettf.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/gettf.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/gettf.cpp
 
 CMakeFiles/main.dir/gettf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/gettf.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/gettf.cpp > CMakeFiles/main.dir/gettf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/gettf.cpp > CMakeFiles/main.dir/gettf.cpp.i
 
 CMakeFiles/main.dir/gettf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/gettf.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/gettf.cpp -o CMakeFiles/main.dir/gettf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/gettf.cpp -o CMakeFiles/main.dir/gettf.cpp.s
 
 CMakeFiles/main.dir/gettf.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/main.dir/gettf.cpp.o.provides.build: CMakeFiles/main.dir/gettf.cpp.o
 
 CMakeFiles/main.dir/pipeline.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/pipeline.cpp.o: ../pipeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/pipeline.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/pipeline.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/pipeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/pipeline.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/pipeline.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/pipeline.cpp
 
 CMakeFiles/main.dir/pipeline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/pipeline.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/pipeline.cpp > CMakeFiles/main.dir/pipeline.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/pipeline.cpp > CMakeFiles/main.dir/pipeline.cpp.i
 
 CMakeFiles/main.dir/pipeline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/pipeline.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/pipeline.cpp -o CMakeFiles/main.dir/pipeline.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/pipeline.cpp -o CMakeFiles/main.dir/pipeline.cpp.s
 
 CMakeFiles/main.dir/pipeline.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/main.dir/pipeline.cpp.o.provides.build: CMakeFiles/main.dir/pipeline.
 
 CMakeFiles/main.dir/filter.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/filter.cpp.o: ../filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/filter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/filter.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/filter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/filter.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/filter.cpp
 
 CMakeFiles/main.dir/filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/filter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/filter.cpp > CMakeFiles/main.dir/filter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/filter.cpp > CMakeFiles/main.dir/filter.cpp.i
 
 CMakeFiles/main.dir/filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/filter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/filter.cpp -o CMakeFiles/main.dir/filter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/filter.cpp -o CMakeFiles/main.dir/filter.cpp.s
 
 CMakeFiles/main.dir/filter.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/main.dir/filter.cpp.o.provides.build: CMakeFiles/main.dir/filter.cpp.
 
 CMakeFiles/main.dir/segmentation.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/segmentation.cpp.o: ../segmentation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/segmentation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/segmentation.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/segmentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/segmentation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/segmentation.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/segmentation.cpp
 
 CMakeFiles/main.dir/segmentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/segmentation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/segmentation.cpp > CMakeFiles/main.dir/segmentation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/segmentation.cpp > CMakeFiles/main.dir/segmentation.cpp.i
 
 CMakeFiles/main.dir/segmentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/segmentation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/segmentation.cpp -o CMakeFiles/main.dir/segmentation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/segmentation.cpp -o CMakeFiles/main.dir/segmentation.cpp.s
 
 CMakeFiles/main.dir/segmentation.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/main.dir/segmentation.cpp.o.provides.build: CMakeFiles/main.dir/segme
 
 CMakeFiles/main.dir/tf.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/tf.cpp.o: ../tf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/tf.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tf.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/tf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/tf.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/tf.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/tf.cpp
 
 CMakeFiles/main.dir/tf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/tf.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/tf.cpp > CMakeFiles/main.dir/tf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/tf.cpp > CMakeFiles/main.dir/tf.cpp.i
 
 CMakeFiles/main.dir/tf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/tf.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/tf.cpp -o CMakeFiles/main.dir/tf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/tf.cpp -o CMakeFiles/main.dir/tf.cpp.s
 
 CMakeFiles/main.dir/tf.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/main.dir/tf.cpp.o.provides.build: CMakeFiles/main.dir/tf.cpp.o
 
 CMakeFiles/main.dir/vis.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/vis.cpp.o: ../vis.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/vis.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/vis.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/vis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/vis.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/vis.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/vis.cpp
 
 CMakeFiles/main.dir/vis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/vis.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/vis.cpp > CMakeFiles/main.dir/vis.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/vis.cpp > CMakeFiles/main.dir/vis.cpp.i
 
 CMakeFiles/main.dir/vis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/vis.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/vis.cpp -o CMakeFiles/main.dir/vis.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/vis.cpp -o CMakeFiles/main.dir/vis.cpp.s
 
 CMakeFiles/main.dir/vis.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/main.dir/vis.cpp.o.provides.build: CMakeFiles/main.dir/vis.cpp.o
 
 CMakeFiles/main.dir/getImages.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/getImages.cpp.o: ../getImages.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/getImages.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/getImages.cpp.o -c /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/getImages.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/getImages.cpp.o -c /home/jeroen/workspace/suii_vision_3d/src/main/getImages.cpp
 
 CMakeFiles/main.dir/getImages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/getImages.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.cpp > CMakeFiles/main.dir/getImages.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeroen/workspace/suii_vision_3d/src/main/getImages.cpp > CMakeFiles/main.dir/getImages.cpp.i
 
 CMakeFiles/main.dir/getImages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/getImages.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/workspaces/suii_vision_3d/src_test_folders/main/getImages.cpp -o CMakeFiles/main.dir/getImages.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeroen/workspace/suii_vision_3d/src/main/getImages.cpp -o CMakeFiles/main.dir/getImages.cpp.s
 
 CMakeFiles/main.dir/getImages.cpp.o.requires:
 
@@ -431,36 +431,32 @@ main: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkViewsGeovis-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.3.so.6.3.0
 main: /usr/local/lib/librealsense2.so.2.29.0
-main: /usr/local/lib/libopencv_gapi.so.4.1.2
-main: /usr/local/lib/libopencv_stitching.so.4.1.2
-main: /usr/local/lib/libopencv_aruco.so.4.1.2
-main: /usr/local/lib/libopencv_bgsegm.so.4.1.2
-main: /usr/local/lib/libopencv_bioinspired.so.4.1.2
-main: /usr/local/lib/libopencv_ccalib.so.4.1.2
-main: /usr/local/lib/libopencv_dnn_objdetect.so.4.1.2
-main: /usr/local/lib/libopencv_dnn_superres.so.4.1.2
-main: /usr/local/lib/libopencv_dpm.so.4.1.2
-main: /usr/local/lib/libopencv_face.so.4.1.2
-main: /usr/local/lib/libopencv_freetype.so.4.1.2
-main: /usr/local/lib/libopencv_fuzzy.so.4.1.2
-main: /usr/local/lib/libopencv_hdf.so.4.1.2
-main: /usr/local/lib/libopencv_hfs.so.4.1.2
-main: /usr/local/lib/libopencv_img_hash.so.4.1.2
-main: /usr/local/lib/libopencv_line_descriptor.so.4.1.2
-main: /usr/local/lib/libopencv_quality.so.4.1.2
-main: /usr/local/lib/libopencv_reg.so.4.1.2
-main: /usr/local/lib/libopencv_rgbd.so.4.1.2
-main: /usr/local/lib/libopencv_saliency.so.4.1.2
-main: /usr/local/lib/libopencv_stereo.so.4.1.2
-main: /usr/local/lib/libopencv_structured_light.so.4.1.2
-main: /usr/local/lib/libopencv_superres.so.4.1.2
-main: /usr/local/lib/libopencv_surface_matching.so.4.1.2
-main: /usr/local/lib/libopencv_tracking.so.4.1.2
-main: /usr/local/lib/libopencv_videostab.so.4.1.2
-main: /usr/local/lib/libopencv_viz.so.4.1.2
-main: /usr/local/lib/libopencv_xfeatures2d.so.4.1.2
-main: /usr/local/lib/libopencv_xobjdetect.so.4.1.2
-main: /usr/local/lib/libopencv_xphoto.so.4.1.2
+main: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
 main: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 main: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 main: /usr/lib/x86_64-linux-gnu/libpcl_io.so
@@ -526,14 +522,8 @@ main: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libproj.so
-main: /usr/local/lib/libopencv_shape.so.4.1.2
-main: /usr/local/lib/libopencv_highgui.so.4.1.2
-main: /usr/local/lib/libopencv_datasets.so.4.1.2
-main: /usr/local/lib/libopencv_plot.so.4.1.2
-main: /usr/local/lib/libopencv_text.so.4.1.2
-main: /usr/local/lib/libopencv_dnn.so.4.1.2
-main: /usr/local/lib/libopencv_ml.so.4.1.2
-main: /usr/local/lib/libopencv_phase_unwrapping.so.4.1.2
+main: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
 main: /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkIOExport-6.3.so.6.3.0
@@ -584,20 +574,21 @@ main: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
 main: /usr/lib/x86_64-linux-gnu/libvtksys-6.3.so.6.3.0
-main: /usr/local/lib/libopencv_optflow.so.4.1.2
-main: /usr/local/lib/libopencv_ximgproc.so.4.1.2
-main: /usr/local/lib/libopencv_video.so.4.1.2
-main: /usr/local/lib/libopencv_videoio.so.4.1.2
-main: /usr/local/lib/libopencv_imgcodecs.so.4.1.2
-main: /usr/local/lib/libopencv_objdetect.so.4.1.2
-main: /usr/local/lib/libopencv_calib3d.so.4.1.2
-main: /usr/local/lib/libopencv_features2d.so.4.1.2
-main: /usr/local/lib/libopencv_flann.so.4.1.2
-main: /usr/local/lib/libopencv_photo.so.4.1.2
-main: /usr/local/lib/libopencv_imgproc.so.4.1.2
-main: /usr/local/lib/libopencv_core.so.4.1.2
+main: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+main: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -621,6 +612,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/mark/workspaces/suii_vision_3d/src_test_folders/main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mark/workspaces/suii_vision_3d/src_test_folders/main /home/mark/workspaces/suii_vision_3d/src_test_folders/main /home/mark/workspaces/suii_vision_3d/src_test_folders/main/build /home/mark/workspaces/suii_vision_3d/src_test_folders/main/build /home/mark/workspaces/suii_vision_3d/src_test_folders/main/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeroen/workspace/suii_vision_3d/src/main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeroen/workspace/suii_vision_3d/src/main /home/jeroen/workspace/suii_vision_3d/src/main /home/jeroen/workspace/suii_vision_3d/src/main/build /home/jeroen/workspace/suii_vision_3d/src/main/build /home/jeroen/workspace/suii_vision_3d/src/main/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

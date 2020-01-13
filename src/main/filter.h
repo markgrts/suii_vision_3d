@@ -16,8 +16,8 @@ class Filter
 {
     private:
         // Define min and max for X, Y and Z
-        float minX = -0.2, minY = -0.2, minZ = -2.5;
-        float maxX = +0.2, maxY = +0.2, maxZ = +0.27;  
+        float minX = -0.2, minY = -0.2, minZ = -0.01;
+        float maxX = +0.2, maxY = +0.2, maxZ = +2.5;  
         rs2::points points;
 
     public:     
